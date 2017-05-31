@@ -1,0 +1,35 @@
+@import "global/template.global.less";
+
+/* ---------------------------- */
+.wh-main{
+  margin:0 auto;
+}
+
+/* html */
+html,body{
+  background-color:#f6f6f6;
+  font-family:@font-family-pc;
+  .text-size-adjust(@text-size-adjust-value:none;);
+  color: #333;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing:antialiased;
+  &.wh-gray-bg{
+    background-color: #f6f6f6;
+  }
+}
+a{
+  color: #666;
+  /*&:visited{color: #666;}*/
+  &:hover{text-decoration: none;}
+  /*&:hover,&:active{color: @link-hover-color;}*/
+}
+*,a:focus {
+  outline:none;
+}
+.wh-sty-hidden{
+  display: none;
+}
+input,button,select,textarea{ outline:none;}
+//导入列表样式
+@import "style/template.detail.less";

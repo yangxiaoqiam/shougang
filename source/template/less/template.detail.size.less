@@ -1,0 +1,102 @@
+.size-mixin(e('big'),@size-base:14px);
+.size-mixin(e('small'),@size-base:12px);
+
+.size-mixin(@size-name,@size-base){
+  .size-@{size-name}{
+  	&{
+  		font-size: @size-base;
+  	}
+  	.fa{
+  		font-size: @size-base+1;
+  	}
+  	//顶部面包屑
+		.wh-dtl-bread{
+			.fa,span{
+				margin-right: 5px;
+			}
+			a{
+				span{
+					&:before{
+						font-size:@size-base;
+					}
+				}
+			}
+		}
+		//顶部右侧下拉
+		.nav{ 
+			.dropdown-menu{
+				font-size: ((@size-base)-2);
+			}
+		} 
+			
+		//内容区域
+		.wh-detail{
+			hr{
+				margin-top:@size-base;
+				margin-bottom:@size-base;
+			}
+			h1,h2,h3,h4,h5{
+				font-weight: normal;
+			}
+			h1{				
+				font-size:@size-base*2;
+				line-height:@size-base*3;
+			}
+			h2{				
+				font-size:@size-base*1.5;
+				line-height:@size-base*2.5;
+			}
+			h3,h4{
+				font-size:@size-base*1.25;
+				line-height:@size-base*2.25;
+			}
+			h5,h6{
+				font-size: @size-base;
+				line-height: @size-base*2;
+			}
+		}
+		//内容主标题
+		.wh-dtl-tit{
+			h1{
+			}
+		}
+		//内容正文
+		.wh-dtl-con{			
+			p{
+				font-size: @size-base+2;
+			
+				margin-bottom: @size-base;
+			}
+			ul,
+			ol{
+				padding-left: @size-base*1.65;
+				margin-bottom: @size-base;
+			}
+			ul,ol,li{
+				font-size: @size-base+2;
+			}
+			blockquote{
+				padding:@size-base+2;
+				padding-left: @size-base;
+				margin-bottom: @size-base;
+				font-size: @size-base;
+			}
+		}
+		//通讯录联系人明细 
+		.details-container {
+			>strong{
+				font-size: @size-base+2;
+			}
+			.form-group {
+				label,.form-control{
+					font-size: @size-base; 
+				}
+			}  
+		}
+		.detail-btn {
+			.btn{
+				font-size: @size-base; 
+			}
+		} 
+	}
+}

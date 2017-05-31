@@ -1,0 +1,54 @@
+<div class="wh-portal-i-title clearfix">
+    <ul class="wh-portal-i-title-left clearfix">
+        <li class="wh-portal-title-li on"><a href="">用户登录</a></li>
+    </ul>
+</div>
+
+
+<div class="wh-portal-i-content">
+    <div class="login-box">
+         <div class="login-contact">
+              <p class="before-username clearfix"><label class="fl"><img src="../defaultroot/images/ver113/shougang/icon06.png"></label><input type="text" name="" class="fr"></p>
+              <p class="before-password clearfix"><label class="fl"><img src="../defaultroot/images/ver113/shougang/icon07.png"></label><input type="password" name="" class="fr"></p>
+              <p class="remember"><em class="rebp fl"><span></span>记住密码</em><input type="button" name="" class="dl fr" value="登录"></p>
+         </div>
+    </div>
+    <ul class="others clearfix">
+        <li><a href="#">扫描登陆</a></li>
+        <li><a href="#">控件安装</a></li>
+        <li><a href="#">设置帮助</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+$(function() {
+
+            //记住密码
+
+            $(".login-box  .remember .rebp").click(function() {
+                    if ($(this).hasClass("open")) {
+                        $(this).removeClass("open");
+                      }
+                        else {
+                            $(this).addClass("open");
+                        }
+
+                    });
+
+                $(".lang-default1").click(function() {
+                    $(this).toggleClass("lang-select");
+                    $("ul.lang-list1").toggle();
+                    $("ul.lang-list1 li").click(function() {
+
+                    })
+                });
+
+
+
+                $(".login-box").parent().siblings(".wh-portal-i-title").find(".wh-portal-title-li a").css({
+                    "font-weight": "bold"
+                });
+
+
+
+            })
+</script>

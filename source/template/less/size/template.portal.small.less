@@ -1,0 +1,490 @@
+@import "../global/template.global.less";
+
+@base-size:10px;
+.wh-main{
+  margin:0 auto;
+}
+
+//head title
+h1 {
+  font-size:(@base-size)*2.4;
+  line-height:(@base-size)*2.4;
+}
+h2 {
+  font-size: (@base-size)*1.8;
+}
+h3{
+  font-size: (@base-size)*1.6;
+}
+h4,h5{
+  font-size: (@base-size)*1.4;
+}
+//-portal-
+.wh-portaler{
+  min-width:(@base-size)*75;
+}
+//-infoColumn-
+//Portal title
+.wh-portal-i-title{
+  .wh-portal-i-title-left{
+    .wh-portal-title-li{
+      font-size: (@base-size)*1.2;
+      a{
+        i.fa{
+          font-size: (@base-size)*1.2;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+  h3{
+    font-size: (@base-size)*1.2;
+  }
+}
+
+.wh-portal-info-content{
+  .wh-portal-info-title{
+    .wh-portal-infotitle{
+      p{
+        font-size: (@base-size)*1.2;
+      }
+    }
+    .wh-portal-infocon{
+      p{
+        font-size: (@base-size)*1.2;
+      }
+    }
+  }
+}
+.wh-portal-i-item{
+  .wh-pending-em{
+    font-size: (@base-size)*1.2;
+  }
+  .wh-pending-time{
+    font-size: (@base-size)*1.2;
+  }
+  em{
+    font-size: (@base-size)*1.2;
+  }
+  i.fa.fa-new{
+    font-size: (@base-size)*1.2;
+  }
+  a{
+    font-size: (@base-size)*1.2;
+    .fa-history{
+      font-size: (@base-size)*1.4;
+    }
+    span{
+      font-size: (@base-size)*1.2;
+    }
+    .fa{
+      vertical-align: baseline;
+    }
+  }
+}
+
+//图片 portal -
+.wh-portal-pic-slide-box{
+  .wh-portal-pic-slide-text{
+    font-size: (@base-size)*1.2;
+  }
+  .wh-portal-pic-slide-txt{
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-portal-pic-slide-circle{
+  li{
+    width: (@base-size)*0.6;
+    height: (@base-size)*0.6;
+  }
+}
+//֪知识标签 portal -
+.wh-portal-k-ul{
+  li{
+    font-size: (@base-size)*1.6;
+  }
+}
+//系统 portal -
+.wh-system-warn{
+  li{
+    font-size: (@base-size)*1.4;
+  }
+}
+//�ļ��������� portal -
+.wh-file-handle{
+  margin:0 -(@base-size)*0.5;
+  li{
+    .wh-file-num{
+      font-size: (@base-size)*2.8;
+    }
+    .wh-file-num-small{
+      font-size: (@base-size)*1.8;
+    } 
+    .wh-file-type{ 
+      em{
+        font-size:(@base-size)*1.2;
+      }
+    }
+  }
+}
+//�������� portal -
+.wh-human-remind-title{
+  span{
+    font-size: (@base-size)*1.2;
+  }
+  p{
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-human-remind-tab{
+  font-size: (@base-size)*1.2;
+  tr{
+    td{
+      font-size: (@base-size)*1.2;
+    }
+  }
+}
+//�����㱨 portal -
+.wh-work-report-name{
+  font-size: (@base-size)*1.2;
+}
+//������Ϣ portal-
+.wh-portal-personal-info{
+  .wh-p-person-header{
+    .wh-p-person-job{
+      font-size: (@base-size)*1.2;
+    }
+  }
+  .wh-p-person-info{
+    em{
+      font-size: (@base-size)*1.2;
+    }
+    h3{
+      a{
+        font-size: (@base-size)*1.4;
+      }
+    }
+  }
+}
+//������Ϣ2 portal-
+.wh-portal-know-notice{
+  .wh-p-person-info{
+    em{
+      font-size: (@base-size)*1.2;
+    }
+  }
+}
+.wh-my-notes-dl{
+  font-size: (@base-size)*1.2;
+}
+//WEB Search portal-
+.wh-web-search-list{
+  li{
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-web-search-address{
+  font-size: (@base-size)*1.2;
+}
+//��Ʊ portal-
+.wh-p-shares-list{
+  li{
+    .wh-p-shares-detail{
+      table{
+        td{
+          font-size: (@base-size)*1.2;
+        }
+      }
+    }
+    .wh-p-shares-title{
+      font-size: (@base-size)*1.2;
+      h3{
+        font-size: (@base-size)*1.4;
+      }
+
+    }
+  }
+}
+//������Ϣ��Ƭ portal-
+.wh-personal-card-content{
+  .wh-personal-card-state{
+    .wh-card-department,.wh-card-state{
+      font-size: (@base-size)*1.2;
+    }
+    .per-wh-hd-user-state,.per-wh-hd-depart-state{
+      a{
+        font-size: (@base-size)*1.2;
+        i.fa{
+          font-size: (@base-size)*1.2;
+        }
+      }
+    }
+    .wh-card-department,.wh-card-state{
+      span{
+        font-size: (@base-size)*1.2;
+      }
+    }
+  }
+  .wh-personal-date{
+    font-size: (@base-size)*1.2;
+  }
+  .wh-personal-card-pos{
+    font-size: (@base-size)*1.2;
+    a{
+      font-size: (@base-size)*1.2;
+    }
+  }
+}
+.wh-personal-card-btn{
+  .wh-personal-card-btn-a{
+    font-size: (@base-size)*1.4;
+  }
+}
+.wh-personal-card-setting{
+  .wh-personal-card-namesign{
+    p{
+      &.wh-personal-date{
+        font-size: (@base-size)*1.2;
+      }
+
+    }
+    span{
+      font-size: (@base-size)*1.2;
+    }
+    a {
+      font-size: (@base-size)*1.6;
+    }
+    input.sign{
+      font-size: (@base-size)*1.2;
+    }
+  }
+
+}
+.wh-personal-card-setting-show{
+  dl{
+    font-size: (@base-size)*1.2;
+    ul.wh-pcard-down-list{
+      li{
+        .fa{
+          font-size: (@base-size)*1.2;
+        }
+      }
+    }
+  }
+  .per-wh-hd-guser-state{
+    a{
+      i.fa{
+        font-size: (@base-size)*1.2;
+      }
+    }
+  }
+}
+.wh-personal-card-setting-btn{
+  .wh-personal-card-btn-a{
+    font-size: (@base-size)*1.4;
+  }
+}
+
+
+//�ҵ��ճ� portal-
+.wh-my-s-date-list{
+  .flex-direction-nav{
+    .flex-prev,.flex-next{
+      font-size: (@base-size)*1.4;
+    }
+  }
+  .wh-my-s-date-li{
+    li{
+      font-size: (@base-size)*1.6;
+    }
+  }
+}
+.wh-my-s-meeting-day{
+  .flex-next{
+    font-size: (@base-size)*3.5;
+  }
+}
+.wh-my-meeting-content{
+  .wh-my-meeting-theme{
+    font-size: (@base-size)*1.4;
+  }
+  .wh-my-meeting-address-time{
+    table{
+      td{
+        font-size: (@base-size)*1.2;
+      }
+    }
+  }
+}
+.wh-schedule-time-box{
+  .wh-schedule-time-slide{
+    li{
+      font-size: (@base-size)*1.2;
+    }
+  }
+  .flex-next,.flex-prev{
+    font-size: (@base-size)*1.2;
+  }
+
+}
+//image slider portal-
+.wh-slide-consult-box{
+  .wh-slide-look{
+    font-size: (@base-size)*1.2;
+  }
+  .wh-slide-name{
+    font-size: (@base-size)*1.4;
+  }
+}
+.wh-slide-sim-consult-box{
+  a{
+    b{
+      font-size: (@base-size)*1.4;
+    }
+  }
+}
+//��������portal-
+.wh-common-process-li{
+  .wh-common-p-text{
+    span{
+      font-size: (@base-size)*1.4;
+    }
+    i{
+      font-size: (@base-size)*1.2;
+    }
+  }
+  .wh-common-p-file{
+    width: 35%;
+  }
+}
+
+.wh-portal-blog-form{
+  .wh-portal-blog-text{
+    font-size: (@base-size)*1.2;
+  }
+}
+
+.wh-portal-blog-look{
+  a{
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-blog-user-text{
+  font-size:(@base-size)*1.2;
+}
+.wh-portal-blog-repeat{
+  ul{
+    li{
+      font-size:(@base-size)*1.2;
+    }
+  }
+}
+// Login portal 
+.wh-portal-login{
+  h4{
+    font-size:(@base-size)*1.4; 
+  }
+  .wh-portal-l-btn{
+    a{
+      font-size:(@base-size)*1.4; 
+    }
+  }
+}
+.wh-portal-l-check{
+  .wh-portal-l-select{
+    font-size:(@base-size)*1.2; 
+  }
+}
+
+
+.wh-protal-tab-rush{
+  div{
+    font-size: (@base-size)*1.2; 
+  }
+}
+.wh-portal-supervisor-tab{
+  p{
+    width: 100%;
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-portal-supervisor{
+  table{
+    font-size: (@base-size)*1.2;
+  }
+}
+.wh-online-vote{
+  .wh-vote-btn{
+    font-size: (@base-size)*1.4; 
+  }
+  h3{
+    font-size: (@base-size)*1.4; 
+  }
+}
+.wh-vote-ques-li{
+  li{
+    font-size: (@base-size)*1.2; 
+  }
+}
+
+.wh-portal-know-list{
+  li{
+    width: (@base-size)*25; 
+  }
+}
+
+.wh-p-person-header{
+  .wh-p-person-ask{
+    font-size: (@base-size)*1.2; 
+  }
+}
+.wh-quick-entry-list{
+  font-size: 0;
+  li{
+    span{
+      height:(@base-size)*2.6;
+      line-height: (@base-size)*2.6;
+      font-size: (@base-size)*1.2; 
+    }
+    .fa{
+      font-size: (@base-size)*1.2; 
+    }
+  }
+}
+.wh-sim-quick-entry-list{
+  li{
+    span{
+      font-size: (@base-size)*1.2; 
+    }
+    .fa{
+      font-size: (@base-size)*1.2; 
+    }
+  }
+}
+
+//文库对应的外问HTML
+.wh-portal-doc-search,.wh-portal-zd-search{
+  font-size: (@base-size)*1.2; 
+}
+
+.user_card {
+  h1{
+    font-size: (@base-size)*1.2; 
+  }
+  .right_aboutinfo{
+    font-size: (@base-size)*1.2; 
+  }
+}
+
+// backstage  左侧面板 字体大小
+.wh-control-l-th{
+  h3{
+    font-size: 14px; 
+  }
+}
+
+.wh-control-panel-menu{
+  h2{
+    font-size: 16px; 
+  }
+}

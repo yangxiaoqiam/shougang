@@ -1,0 +1,51 @@
+/* html {overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);} */
+/* html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); } */
+ html ,img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#grayscale);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(1);
+} 
+
+
+img{
+     filter: url(gray.svg#grayscale);
+    
+    filter: gray;
+}
+
+/* html {
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: url(desaturate.svg#grayscale);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(1);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);
+} */
+
+/* body, img,div，p,ul,li,em,span{filter:gray;filter: grayscale(100%);
+-webkit-filter: grayscale(100%);}
+
+img,div，p,ul,li,em,span{
+      filter: gray; just for IE6-9  
+      filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: url(desaturate.svg#grayscale);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(1);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);  
+}
+ */
+.tan-login{
+	-moz-top:29%;
+}

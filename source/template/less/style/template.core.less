@@ -1,0 +1,364 @@
+// //定义统一不及格
+// @import "template.table.less";
+
+
+// //容器
+// .wh-s-content{
+//   .container{
+//     padding:15px;
+//   }
+// }
+
+// .wh-view {
+//   .nav-tabs{
+//     border-bottom:0;
+//     >li{
+//       >a{
+//         line-height: 1.5;
+//         border-color: #CFD0D0;
+//         background-color: #fff;
+//       }
+//       &.active > a {
+//         &,
+//         &:hover,
+//         &:focus {
+//           border-color: #CFD0D0;
+//           border-bottom-color: #E4E5E6;
+//           background-color: #E4E5E6;
+//           color: #000;
+//         }
+//       }
+//     }
+//     &.nav-tab-de-4{
+//       >li{
+//         float: left;
+//         width: 25%;
+//         >a{
+//           padding:10px 0;
+//           margin-right: 0;
+//           text-align: center;
+//         }
+//       }
+//     }
+//   }
+
+//   .tab-content{
+//     background-color: #fff;
+//     border-width: 0 1px 1px 1px;
+//     border-style: solid;
+//     border-color: #CFD0D0;
+//   }
+//   .view-table{ 
+//     .view-tb-hd{
+//       position: relative;
+//     }   
+//     .view-btn-group{
+//       position: absolute;
+//       right:0;
+//       top:0;
+//     }
+//   }
+// }
+
+// //视图模块（顶部）
+// .view-hdpanel {
+//   .input-group {
+//     height: 34px;
+//     .input-group-addon {
+//       background-color: #fff;
+//     }
+//   }
+// }
+
+// //列表标识颜色
+// .c-chose-item {
+//   i.fa {
+//     &.fa-color-gray {
+//       color: #EFEFEF;
+//     }
+//     &.fa-color-blue {
+//       color: #36A9FF;
+//     }
+//     &.fa-color-purple {
+//       color: #935EFF;
+//     }
+//     &.fa-color-red {
+//       color: #FB6C72;
+//     }
+//     &.fa-color-orange {
+//       color: #FEC253;
+//     }
+//     &.fa-color-yellow {
+//       color: #FEF956;
+//     }
+//   }
+//   &:hover {
+//     i.fa {
+//       &.fa-color-gray {
+//         color: #CCC;
+//       }
+//       &.fa-color-blue {
+//         color: #0078FF;
+//       }
+//       &.fa-color-purple {
+//         color: #6900FD;
+//       }
+//       &.fa-color-red {
+//         color: #FA002A;
+//       }
+//       &.fa-color-orange {
+//         color: #F99700;
+//       }
+//       &.fa-color-yellow {
+//         color: #EEE800;
+//       }
+//     }
+//   }
+// }
+
+// //警示数字
+// .note-num {
+//   display: inline-block;
+//   vertical-align: middle;
+//   line-height: 1;
+//   height: 16px;
+//   padding: 2px 5px;
+//   margin-left: 4px;
+//   border-radius: 15px;
+//   overflow: hidden;
+//   z-index: 999;
+//   background: #f34040;
+//   font-size: 12px;
+//   color: #fff;
+//   &.note-num-gray {
+//     background-color: #A4A5A6;
+//   }
+// }
+
+// //按钮
+// .btn-groups {
+//   &.btn-groups-l {
+//     .btn {
+//       margin-right: 6px;
+//     }
+//   }
+//   &.btn-groups-r {
+//     .btn {
+//       margin-left: 6px;
+//     }
+//   }
+// }
+
+// .btn {
+//   i.fa {
+//     margin-top: -2px;
+//     margin-right: 10px;
+//     vertical-align: middle;
+//   }
+//   span {
+//     display: inline-block;
+//   }
+//   &.btn-fa.btn-fav-star.active {
+//     i.fa-star-o {
+//       &:before {
+//         content: "\f09b";
+//       }
+//     }
+//   }
+// }
+
+
+// .modal-task-set{
+//   .task-form-title,
+//   .task-form-list {
+//     margin-bottom: 15px;
+//   }
+//   .task-form-title {
+//     font-weight: bold;
+//   }
+//   .task-from-btns {
+//     a.btn {
+//       margin-right: 10px;
+//     }
+//   }
+// }
+
+// //pop弹框
+// //颜色选择
+// .c-chose-list {
+//   line-height: 1;
+//   a {
+//     display: inline-block;
+//     margin: 0 3px;
+//     &:hover,
+//     &:active,
+//     &.active {
+//       i.fa {
+//         &::before {
+//           content: "\f00c";
+//         }
+//       }
+//     }
+//     &.btn {
+//       i.fa {
+//         margin-right: 0;
+//         margin-top: 0;
+//         vertical-align: top;
+//       }
+//     }
+//   }
+// }
+
+// //操作下拉
+// .s-edit-list {
+//   a {
+//     display: block;
+//   }
+// }
+
+// //附件列表
+// .att-list{
+//   li{
+//     float: left;
+//     list-style: none;
+//     position: relative;
+//     margin: 3px 5px 3px 0;
+//     a{
+//       display: block;
+//       padding: 5px;
+//       border: 1px solid #aaa;
+//       border-radius: 3px;
+//       background-color: #e4e4e4;
+//       #gradient .vertical(@start-color: #f4f4f4; @end-color: #e8e8e8; @start-percent: 20%; @end-percent: 100%);
+//       background-clip: padding-box;
+//       box-shadow: 0 0 2px #fff inset,0 1px 0 rgba(0,0,0,.05);
+//       color: #333;
+//       i.fa,
+//       span,
+//       em{
+//         display: inline-block;
+//         vertical-align: middle;
+//       }
+//       i.fa{
+//         margin-right: 10px;
+//       }
+//       span{
+//         margin-right: 3px;
+//       }
+//       em{
+
+//       }
+//     }
+//   }
+// }
+// //分页  
+// .wh-pager {
+//   height: 68px;
+//   cursor: default;
+//   padding: 20px 30px 0 30px;
+//   border-width: 0 1px 1px 1px ; 
+//   border-style: solid;
+//   border-color: #CFD0D0;
+//   background: #fff;
+//   border-radius: 0 0 6px 6px;
+//   a {
+//     padding: 4px 5px;
+//     margin: 0 3px;
+//   }
+//   .wh-pager-r {
+//     float: right;
+//     .wh-pager-size {
+//       float: left;
+//       height: 30px;
+//       line-height: 30px;
+//       padding: 0 2px;
+//       margin-right: 2px;
+//       text-align: left; 
+//       select { 
+//         height: 30px;
+//         line-height: 30px;
+//         padding-left: 5px; 
+//         width: 90px;
+//         border-radius: 3px;
+//       }
+//     }
+//     .wh-pager-list {
+//       float: left;
+//       margin: 0;
+//       text-align: left;
+//       a {
+//         border-radius: 3px; 
+//         float: left;
+//         display: inline-block;
+//         padding: 0 10px;
+//         margin: 0 2px;
+//         cursor: pointer;
+//         height: 30px; 
+//         line-height: 30px;
+//         text-decoration: none; 
+//         &.wh-pager-current,
+//         &.wh-pager-current {
+//           cursor: pointer;
+//         }
+//         &.wh-pager-disabled,
+//         &.wh-pager-disabled {
+//           cursor: not-allowed;
+//         }
+//       }
+//       span {
+//         float: left;
+//         margin: 0 2px;
+//       }
+//     } 
+//     .wh-pager-btn {
+//       float: left;
+//       input {
+//         display: inline-block;
+//         height: 30px;
+//         line-height: 30px;
+//         width: 48px;
+//         vertical-align: top;
+//         margin: 0 2px;
+//         text-align: center;
+//         border-radius: 3px;
+//       }
+//       input[type=button] {
+//         height: 30px;
+//         line-height: 30px;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+//   .wh-pager-l {
+//     float: left; 
+//     .wh-pager-desc {
+//       float: right;
+//       line-height: 26px;
+//       padding-right: 5px;
+//       .pagelist-total{
+//         font-weight: bold;
+//       } 
+//     }
+//   }
+// }
+
+// //高级搜索 弹出框
+// .modal-search-set{
+//   .modal-dialog{
+//     width: 413px; 
+//   }
+// }
+
+// //新建搜索日期控件
+// .date{ 
+//   .input-group-addon{ 
+//     padding: 0;
+//     border: 0 none;
+//     background: #fff; 
+//   }
+//   &.date-search{
+//     .input-group-addon{ 
+//       display: inherit;
+//     }
+//   }
+// }  

@@ -1,0 +1,17 @@
+html{
+	&.size-small, &.size-small body{
+		font-size: 12px;
+	}
+	&.size-big, &.size-big body{
+		font-size: 14px;
+	}
+}
+/*小尺寸*/
+.size-small{
+	@import "size/template.style.small.less";
+}
+/*大尺寸*/
+.size-big{
+	@import "size/template.style.big.less";
+}
+

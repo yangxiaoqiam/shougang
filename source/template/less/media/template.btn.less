@@ -1,0 +1,42 @@
+@import "../less/global/template.global.less";
+@import "../less/template.bootstrap.theme.wh.less";
+
+.btn{
+	&.btn-wh-file{
+		border-color: #ddd;
+		padding: 0;
+		&:hover{
+			background-color:#fff;
+		}
+		&:active{
+			outline: 0;			
+			.box-shadow(none);
+		}
+		input[type=file] {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		  font-size: 999px;
+		  text-align: right;
+		  filter: alpha(opacity=0);
+		  opacity: 0;
+		  background: red;
+		  cursor: inherit;
+		  display: block;
+		}
+	} 
+	&.btn-wh-blank{
+		border-color:#ccc;
+	}
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+   outline: 0;
+}

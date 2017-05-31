@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-skyblue size-small">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title> 
+    <link rel="stylesheet" href="dist/css/template_system/template.reset.css" />
+    <link rel="stylesheet" href="dist/css/template_system/template.fa.css" />
+    <link rel="stylesheet" href="dist/css/template_default/template.portal.css" />
+    <link rel="stylesheet" href="dist/css/template_default/template.style.css" /> 
+    <link rel="stylesheet" href="dist/css/template_default/template.portal.size.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />  
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="pro/css/pro-style.css" />
+    <link rel="stylesheet" type="text/css" href="template/css/template_default/gf.css" /> 
+      
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js" ></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js" ></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js" ></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+
+    <!-- add stylesheet -->
+    <link rel="stylesheet" href="template/css/template_default/template.pro-style.min.css" />
+ 
+</head>
+<body>
+<div class="wh-container wh-portaler">
+    <table id="portalMain" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout:fixed;"> 
+    <tr>
+        <td width="20%" class="portal-column-td" zone="A"> 
+            <!-- 个人设置 -->
+            <div class="wh-portal-info-box wh-portal-html"> 
+                    <div class="wh-portal-info"> 
+                        <div class="wh-portal-i-content">
+                            <!--#include file="platform/portal/pro-personal-set.html"-->
+                        </div>
+                    </div>
+                </div> 
+
+            <!--  常用流程   -->
+            <div class="wh-portal-info-box">
+                <!--#include file="platform/portal/portal-i-tools.html"-->
+                <div class="wh-portal-info">
+                    <!--#include file="platform/portal/pro-process.html"-->
+                </div>
+            </div>
+        </td>
+        <td width="50%" class="portal-column-td" zone="B">
+            <!--图片新闻 -->
+            <div class="wh-portal-info-box wh-portal-html"> 
+                <div class="wh-portal-info"> 
+                       <!--#include file="platform/portal/pro-newsImg.html"-->
+                </div>
+            </div>
+
+        </td>
+        <td width="25%" class="portal-column-td" zone="c">
+          <!--文件办理提醒 -->
+               <div class="wh-portal-info-box">
+                <!--#include file="platform/portal/portal-i-tools.html"-->
+                <div class="wh-portal-info">
+                    <!--#include file="platform/portal/pro-tips.html"-->
+                </div>
+            </div>
+        </td>
+
+    <tr>
+    <tr>
+        <td colspan="3">
+         <!--个人事务 -->
+            <div class="wh-portal-info-box">
+                <!--#include file="platform/portal/portal-i-tools.html"-->
+                <div class="wh-portal-info">
+                    <!--#include file="platform/portal/pro-shiwu.html"-->
+                </div>
+            </div>
+        </td>
+    </tr>
+</table> 
+</div> 
+</body>
+</html>

@@ -1,0 +1,979 @@
+@global-color:#2666c8;
+
+
+body.wh-gray-bg,
+html.wh-gray-bg {
+    background: #fff;
+}
+
+.before-top {
+    background: #fff;
+}
+
+.w1280 {
+    margin: 0 auto;
+     width: 1100px;
+        padding:0;
+}
+@media screen and (max-width:1400px){
+    .w1280 {
+        width: 1100px;
+        padding:0;
+     }
+}
+
+
+.wh-portal-info-box {
+    margin: 0 10px 20px 10px;
+}
+
+.wh-portal-tools {
+    height: 20px;
+    top: 18px;
+    i.fa {
+        font-size: 13px;
+        color: #bcbcbc;
+        font-weight: normal;
+        font-family: Arial;
+    }
+}
+
+.wh-portal-info{
+        border: 1px solid #cfcfcf;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 3px #cfcfcf;
+    box-shadow: 0 0 3px #cfcfcf;
+}
+
+.before-top {
+    padding: 15px 170px;
+    border-bottom: 1px solid #ddd;
+    .before-logo{
+        margin-top:3px;
+    }
+    .before-logo-ri {
+        margin-top: 14px;
+        .ri_1 {
+            a {
+                display: inline-block;
+                color: #758ba2;
+                font-size: 14px;
+                height: 32px;
+                line-height: 32px;
+                &.sc {
+                    border-right: 1px dashed #ccc;
+                    padding-right: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px){
+    .before-top{
+        padding:9px 0;
+    }
+}
+
+
+//头部导航
+.before-nav {
+    margin-left: 50px;
+    margin-top: 17px;
+    li {
+        float: left;
+        padding: 0 20px 18px 20px;
+        position: relative;
+        z-index: 9999;
+        font-size: 16px;
+        &>a {
+            &:hover {
+                color: #2666c8;
+            }
+        }
+        dl {
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            background: #2666c8;
+            padding: 5px 0;
+            display: none;
+            dd {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                a {
+                    color: #fff;
+                    display: block;
+                    font-size: 14px;
+                    &:hover {
+                        background: #64A1FF;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.before-nav li:hover dl {
+    display: block;
+}
+
+.before-logo-ri {
+    height: 30px;
+    line-height: 30px;
+}
+
+.header-buttom-fr {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.header-buttom-fr input {
+    width: 168px;
+    height: 30px;
+    border: none;
+    font-size: 12px;
+    color: #ccc;
+    float: left;
+    background: none;
+    text-indent: 10px;
+    line-height:30px;
+}
+
+.header-buttom-fr a i.fa {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 8px;
+    display:inline-block;
+    margin-top:8px;
+}
+
+.header-buttom-fr a.before-btn {
+    background: #666666;
+    color: #fff;
+    width: 32px;
+    height: 30px;
+    line-height: 35px;
+    display: inline-block;
+}
+
+.banner {
+    overflow: hidden;
+    display:none;
+}
+
+.banner.close {
+    height: 0;
+}
+
+.slideBox {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin: 0px auto auto;
+}
+
+.slideBox .hd {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+}
+
+.slideBox .hd ul li {
+    display: inline-block;
+    background: url(../../../images/ver113/shougang/before-icon04.png);
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.slideBox .hd ul li.on {
+    background: #e70050;
+    background: url(../../../images/ver113/shougang/before-icon03.png);
+}
+
+.slideBox .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    zoom: 1;
+    vertical-align: middle;
+}
+
+
+#ewmDiv img{
+    width:60%;
+    display:block;
+    margin:5px auto;
+}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+
+/* .slideBox .prev{position:absolute; left:7%; top:32%;  display:block; width:76px; height:148px; background:url(../images/bannerleft.png); z-index:9999;}
+		.slideBox .next{ position:absolute; right:7%; top:32%; display:block; width:76px; height:148px; background:url(../images/bannerRight.png); z-index:9999;   }
+		.slideBox .prev:hover,
+		.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+		.slideBox .prevStop{ display:none;  }
+		.slideBox .nextStop{ display:none;  }	 */
+#portalMain{margin-top: 30px;}
+.close_banner {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    height: 18px;
+    display:none;
+    span {
+        display: inline-block;
+        width: 70px;
+        height: 18px;
+        background: url(../../../images/ver113/shougang/click.png) no-repeat;
+        margin-top: 4px;
+    }
+    &.close {
+        span {
+            background: url(../../../images/ver113/shougang/click-after.png) no-repeat;
+        }
+    }
+}
+
+.height-1 .wh-portal-info {
+    height: 285px;
+}
+
+.height-2 .wh-portal-info {
+    height: 285px;
+}
+
+.height-3 .wh-portal-info {
+    height: 285px;
+}
+
+.height-4 .wh-portal-info {
+    height: 320px;
+}
+
+.height-5 .newsbox {;
+
+    height: 320px}
+
+.height-6 .wh-portal-info {
+   height: 285px;
+}
+.height-7 .wh-portal-info {
+    height: 357px;
+}
+.wh-portal-i-title .wh-portal-i-title-left .wh-portal-title-li a{margin:0 4px;}
+
+//登录
+.login-box {
+    width: 95%;
+    margin: -5px auto;
+    .login-tit {
+        width: 100%;
+        background: #135bac;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 15px 0;
+        strong {
+            margin-left: 25px;
+            color: #fff;
+        }
+        img {
+            float: right;
+            margin-right: 25px;
+        }
+    }
+    .login-contact {
+        width: 100%;
+        border-bottom: 1px dashed #ddd;
+        p {
+            margin: 15px 0;
+            height: 40px;
+            &.before-username,
+            &.before-password {
+                background: #e4f5fd;
+            }
+            label {
+                background: #00a0ea;
+                width: 41px;
+                height: 38px;
+                line-height: 38px;
+                display: inline-block;
+                text-align: center;
+            }
+            input[type="text"],
+            input[type="password"] {
+                text-indent: 5px;
+                height: 38px;
+                line-height: 38px;
+                width: 82%;
+                background: #e4f5fd;
+                border: 0 none;
+            }
+            input[type="radio"] {
+                height: 38px;
+                line-height: 38px;
+            }
+        }
+        .remember {
+            margin-bottom: 12px;
+            .rebp {
+                width: 110px;
+                height: 21px;
+                line-height: 19px;
+                background: url(../../../images/ver113/shougang/icon09.png) no-repeat;
+                display: block;
+                text-indent: 54px;
+                position: relative;
+                font-size: 14px;
+                &.open span {
+                    background: url(../../../images/ver113/shougang/icon081.png) no-repeat;
+                    left: 24px;
+                }
+                span {
+                    left: 3px;
+                    top: 2px;
+                    position: absolute;
+                    display: block;
+                    width: 17px;
+                    height: 17px;
+                    background: url(../../../images/ver113/shougang/icon082.png) no-repeat;
+                    transition-duration: 500ms;
+                    transition-duration: 500ms;
+                    -moz-transition-duration: 500ms;
+                    /* Firefox 4 */
+                    -webkit-transition-duration: 500ms;
+                    /* Safari and Chrome */
+                    -o-transition-duration: 500ms;
+                    /* Opera */
+                    cursor: pointer;
+                }
+            }
+            .dl {
+                background: #f58146;
+                width: 118px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                border: 0;
+                background: url(../../../images/ver113/shougang/bg01.png) left bottom no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.others {
+    margin-top: 15px;
+    li {
+        width: 32%;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        a {
+            color: #00a0e9;
+        }
+    }
+}
+
+//potral标题头部
+.wh-portal-i-title {
+    height: 45px;
+    line-height: 45px;
+    background: #efefef;
+}
+
+.wh-portal-i-title .wh-portal-i-title-left .wh-portal-title-li {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.wh-portal-i-title .wh-portal-i-title-left {
+    height: 45px;
+    width: 80%;
+}
+
+.wh-portal-i-item {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    position:relative;
+    .fa.fa-file-o:before {
+        content: none;
+    }
+    .fa.fa-file-o {
+        background: url(../../../images/ver113/shougang/icon01.png) left center no-repeat;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        margin-top: 12px;
+    }
+    font {
+        font-size: 14px;
+        color: #f19149;
+        overflow:hidden;
+        display:inline-block;
+            height:26px;
+    }
+}
+
+.line-height-1 .wh-portal-i-item {
+    height: 31px;
+    line-height: 31px;
+}
+
+.wh-portal-i-item a span,
+.wh-portal-i-item .wh-pending-time {
+    font-size: 14px;
+}
+
+.wh-portal-i-item .wh-pending-time {
+    float:right;
+    position:absolute;
+    right:0px;
+    top:-2px;
+    width:77px;
+}
+.wh-portal-i-item  span.title-aa{
+    width:58%;
+    height:26px;
+    display:inline-block;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: keep-all;
+    word-wrap: normal;
+    white-space: nowrap;
+    cursor:pointer;
+}
+
+//规章制度
+.gzzd {
+    padding-top: 5px;
+    li {
+        width: 44%;
+        margin: 0 3%;
+        background: #f49900;
+        border-radius: 5px;
+        float: left;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 14px;
+        font-size: 15px;
+        a {
+            color: #fff;
+            display: block;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+//
+.slideBox_a {
+    width: 100%;
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 5px auto auto;
+    margin-bottom: 18px;
+}
+
+.slideBox_a .hd {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    bottom: 53px;
+    z-index: 1;
+}
+
+.slideBox_a .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.slideBox_a .hd ul li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.slideBox_a .hd ul li.on {
+    background: #0073c6;
+    color: #fff;
+}
+
+.slideBox_a .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox_a .bd li {
+    zoom: 1;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slideBox_a .bd li img {
+    width: 100%;
+    height: 195px;
+}
+
+.slideBox_a .bd li a p {
+    color: #E6A054;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+}
+
+//常用链接
+#link2{height:209px;}
+.before-link {
+    width: 93%;
+    margin: 2px auto;
+    li {
+        width: 100%;
+        border: 1px solid #aad6fd;
+        border-radius: 5px;
+        padding: 4px 0 3px 0;
+        margin-bottom: 9px;
+        a {
+            img {
+                width: 43px;
+                height: 34px;
+                margin-left: 10px;
+            }
+            em {
+                display: block;
+                border-left: 1px solid #aad6fd;
+                float: right;
+                width: 73%;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 18px;
+                color: #3798F6;
+            }
+        }
+    }
+}
+
+//底部
+.before-footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #959595;
+    color: #D5D2D2;
+    span {
+        color: #fff;
+        margin: 0 25px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .wh-portal-i-title .wh-portal-i-title-left .wh-portal-title-li {
+        font-size: 14px;
+    }
+    .login-box .login-contact p input[type=text],
+    .login-box .login-contact p input[type=password] {
+        width: 79%;
+    }
+    .login-box .login-contact .remember .dl {
+        width: 90px;
+    }
+    .login-box .login-contact .remember .rebp {
+        font-size: 12px;
+    }
+    .wh-portal-tools i.fa {
+        font-size: 12px;
+    }
+}
+
+//信息
+.erji {
+    margin-bottom: 30px;
+}
+
+.siderbar {
+    width: 20%;
+    .siderbar-img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.side-nav ul>li.current a,
+.side-nav dl dd.current a,
+.side-nav dl dd ul li.current a {
+    color: #fe5900;
+}
+
+.side-nav a {
+    cursor: pointer;
+}
+
+.side-nav dl .side-dropdown-three li a {
+    cursor: pointer;
+}
+
+.side-nav {
+    margin-top: 18px;
+    
+    &>ul {
+        &>li {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            border:1px solid #ececec;
+            margin-bottom: 3px;
+            &.on, &:hover {
+                background: #efefef;
+                a {
+                    color: #2666c8;
+                    background: url(../../../images/ver113/shougang/syly-icon01.png) 13px center no-repeat;
+                }
+            }
+            &>a {
+                display: block;
+                width: 100%;
+                color: #000;
+                background: url(../../../images/ver113/shougang/syly-icon01.png) 13px center no-repeat;
+                text-indent: 28px;
+                font-size: 16px;
+            }
+        }
+    }
+    dl {
+        display: none;
+        .side-dropdown-three {
+            display: none;
+            li {
+                text-indent: 55px;
+                border-bottom: 1px dashed #eeeeee;
+                height: 30px;
+                line-height: 30px;
+                background: #fff;
+                a {
+                    padding-left: 10px;
+                }
+            }
+        }
+        dd {
+            width: 100%;
+            border-bottom: 1px dashed #e4dcdc;
+            height: 30px;
+            line-height: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            text-indent: 48px;
+            &>a {
+                color: #188ac8;
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+.side-ser-1 {
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+
+.erji-fr-box {
+    width: 78%;
+    background: #fff;
+    .erji-fr {
+        width: 100%;
+        padding-bottom: 4px;
+        min-height: 400px;
+        border:1px solid #e5e5e5; 
+        .location {
+            height: 50px;
+            line-height: 50px;
+            background: #f3f3f3;
+            text-indent: 22px;
+            position: relative;
+            .now{
+            	font-size:18px;
+            	float:left;
+            	text-indent:20px;
+                 height: 50px;
+            line-height: 50px;
+            }
+            p {
+            	width:70%;
+                margin-top: 0px;
+                float:right;
+                text-align:right;
+                margin-right:13px;
+                 height: 50px;
+            line-height: 50px;
+                a,
+                i {
+                    color: #000;
+                    font-size:13px;
+                }
+                i {
+                    margin: 0 6px;
+                }
+            }
+            img {
+                position: absolute;
+                right: 26px;
+                top: 38px;
+            }
+        }
+    }
+    .news-list {
+    	padding:10px 30px;
+        th,
+        td {
+            height: 35px;
+            line-height: 35px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #959595;
+        }
+        td {
+            font-size: 14px;
+            color: #7d7d7d;
+            &.td2 {
+                text-align: left;
+            }
+            a {
+                color: #000;
+            }
+        }
+        .title {
+            background:url(../../../images/ver113/shougang/icon01.png) left center no-repeat;
+            text-indent:20px;
+            text-align:left;
+            i.fa{
+                font-size:14px;
+                color:orange;
+                margin-left:-18px;
+            }
+        }
+    }
+}
+
+//分页
+.syly-pager{
+    padding:20px 0 10px 0;
+}
+.syly-page{
+    
+    text-align:right;
+    a{
+        border:1px solid #ddd;
+        display:inline-block;
+        height:21px;
+        line-height:21px;
+        font-size:12px;
+        padding:0 5px;
+    }
+    input{
+        border:1px solid #ddd;
+        height:21px;
+        line-height: 21px;
+        width:29px;
+        margin-top: -2px;
+    }
+}
+
+.w-in{
+    padding-top:30px;
+}
+
+
+//信息详细页
+
+   .detail-contact {
+                /* position: fixed;
+                left: 50%;
+                margin-left: -550px;
+                top: 40px;
+                width: 1064px; */
+                z-index: 1200;
+                overflow: auto;
+                border: 1px dashed #ddd;
+                border-radius: 5px;
+                padding: 15px 15px 100px 20px;
+                background: #fff;
+                .detail-title {
+                    font-size: 20px;
+                }
+                .time {
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 13px;
+                    color: #333;
+                    span {
+                        color: #696969;
+                    }
+                }
+                .juti {
+                    font-size: 14px;
+                    line-height: 35px;
+                    color: #333;
+                    padding-bottom: 20px;
+                }
+            }
+         .detail-contact-width{
+            width:100%;
+
+            .erji-fr .location p{
+                float:left;
+                    background: url(../../../images/ver113/shougang/icon01.png) 22px center no-repeat;
+                text-align:left;
+                width:auto;
+                font-size:16px;
+                margin-right:0;
+                padding-left:15px;
+                a,i{
+                      font-size:16px;
+                }
+            }
+        }
+
+
+//搜索
+.erji-fr-box{
+    #searchTable{
+        border:1px solid #ddd;
+        margin:15px 0 20px 0;
+    }
+        #searchTable td{
+            padding:6px 10px;
+        }
+        .selectIco{
+            margin-left:-27px;
+        }
+}
+
+ .Public_tag ul li{
+    border-color: #ddd;
+
+}
+
+#whir_titlesearch{
+    input{
+        border:1px solid @global-color;
+        background:#fff;
+        color:@global-color;
+    }
+}
+
+ .erji-fr-box .news-list .listTableHead td{
+        color:#333;
+        border-color:#ddd;
+       
+} 
+.listTable .listTableLine1 td, .listTable .listTableLine2 td,.listTable{
+    border-color: #ddd;
+   height:40px;
+   line-height: 40px;
+   text-align:center;
+   a{
+    display:inline-block;
+    text-align:left;
+    margin-left: 7px;
+   }
+}
+.listTableLine1 td{
+    text-align:center;
+    a:hover{
+         color:@global-color;
+    }
+    &.tl{
+        text-align:left;
+    }
+}
+.theme-blue a:active, .theme-blue a:focus, .theme-blue a:hover{
+    color:@global-color;
+}
+.listTable .listTableLine2:hover td, .listTable .listTableLine1:hover td{
+    background:none;
+}
+
+.txl-list{width:95%;margin:0 auto;}
+.txl-list .listTableHead td{background:#ededed;}
+.txl-list td{border:1px solid #e5e5e5;height:30px;line-height: 30px;padding:0;margin:0;}
+  .txl-ser{
+        padding: 10px 0;
+        margin:10px 0 5px 0;
+        text-align:right;
+         .txl-ser1{
+            display:inline-block;
+            height:33px;
+            line-height:33px;
+            border:1px solid #c5c5c5;
+            width:10%;
+            font-size:12px;
+            text-indent:5px;
+             color:#555;
+             width:150px;
+             color:#A6A3A3;
+        }
+        .txl-btn{
+               height:33px;
+            line-height:30px;
+            padding: 0 20px;
+            color:#fff;
+           background:#2666c8;
+             font-size:14px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            outline:none;
+            margin-left:11px;
+            overflow:hidden;
+            border:0 none;
+        }
+    }
+
+

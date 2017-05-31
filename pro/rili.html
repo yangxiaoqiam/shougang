@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html lang="zh-cn" class="theme-red">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/pro-style.css" />
+    <script type="text/javascript " src="js/jquery.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap-datetimepicker.js "></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+</head>
+
+<body>
+  
+
+
+    
+            <div class="data-a">
+                        <div class="pro-sche">
+                            <div id="datetimepicker"></div>
+                        </div>
+            </div>
+
+
+  <script type="text/javascript">
+$(function(){
+
+setTimeout( function(){
+     $(".pro-banner").addClass("no-banner");
+}, 5 * 1000 );
+
+  jQuery(".slideBox-meeting").slide({mainCell:".bd ul",autoPlay:true,effect:"fade"});
+
+
+  //查看当月信息部门下拉
+    $(".ac_close").click(function(){
+
+        $(".per-drop").css({"display":"none"})
+    })
+
+     $(".slideBox-meeting .infoList-title .text").click(function(){
+
+        $(".per-drop").css({"display":"block"})
+    })
+
+
+
+       $(".pro-header-tips").click(function(){
+              layer.open({
+                  type: 2,
+                  title: '视频会议',
+                  shadeClose: false,
+                  shade: 0.8,
+                  area: ['1000px', '500px'],
+
+                  content:"detail-meeting.html ",
+
+              });
+        });
+
+  });
+
+
+
+    </script> 
+
+   <script type="text/javascript">
+    
+$.fn.datetimepicker.dates['zh'] = {
+    days: ["星期日 ", "星期一 ", "星期二 ", "星期三 ", "星期四 ", "星期五 ", "星期六 ", "星期日 "],
+    daysShort: ["周日 ", "周一 ", "周二 ", "周三 ", "周四 ", "周五 ", "周六 ", "周日 "],
+    daysMin: ["周日 ", "周一 ", "周二 ", "周三 ", "周四 ", "周五 ", "周六 ", "周日 "],
+    months: ["一月 ", "二月 ", "三月 ", "四月 ", "五月 ", "六月 ", "七月 ", "八月 ", "九月 ", "十月 ", "十一月 ", "十二月 "],
+    monthsShort: ["一月 ", "二月 ", "三月 ", "四月 ", "五月 ", "六月 ", "七月 ", "八月 ", "九月 ", "十月 ", "十一月 ", "十二月 "],
+    today: "今天 ",
+    suffix: [],
+    meridiem: ["上午 ", "下午 "]
+};
+$('#datetimepicker').datetimepicker({
+    language: 'zh',
+    maxView: '0',
+    todayHighlight: '1',
+});
+
+</script> 
+
+   
+  
+</body>
+
+</html>

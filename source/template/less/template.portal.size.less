@@ -1,0 +1,20 @@
+html,body{
+	&.size-small{
+		font-size: 12px;
+		line-height: 26px;
+	}
+	&.size-big{
+		font-size: 14px;
+		line-height: 30px;
+	}
+}
+
+/*小尺寸*/
+.size-small{
+	@import "size/template.portal.small.less";
+}
+/*大尺寸*/
+.size-big{
+	@import "size/template.portal.big.less";
+}
+

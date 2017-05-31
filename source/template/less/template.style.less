@@ -1,0 +1,44 @@
+@import "global/template.global.less";
+//导入部分svg图标
+@import "svg/template.svg.less";
+//导入动画库
+@import "global/template.keyframe.less";
+//导入Ztree
+@import "global/template.ztree.less";
+
+/* ---------------------------- */
+.wh-main{
+  margin:0 auto;
+}
+
+/* html */
+html,body{
+  background-color: #fff;
+  font-family:@font-family-pc;
+  .text-size-adjust(@text-size-adjust-value:none;);
+  color: #333;
+  // height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing:antialiased;
+  &.wh-gray-bg{
+    background-color: #ededed;
+  }
+}
+a{
+  color: #666;
+  /*&:visited{color: #666;}*/
+  &:hover{text-decoration: none;}
+  /*&:hover,&:active{color: @link-hover-color;}*/
+}
+*,a:focus {
+  outline:none;
+  text-decoration: none;
+}
+.wh-sty-hidden{
+  display: none;
+}
+input,button,select,textarea{ outline:none;}
+//导入主框架样式
+@import "style/template.frame.less";
+//导入列表样式
+@import "style/template.core.less";

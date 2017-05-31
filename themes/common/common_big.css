@@ -1,0 +1,63 @@
+.btnButton10font,
+.btnButton4font,
+.btnButton6font,
+.btnButton8font,
+body,
+table {
+    font-size: 14px
+}
+
+.inputText {
+    font-size: 14px
+}
+
+.inputText:hover {
+    font-size: 14px
+}
+
+.inputTextPrompt {
+    font-size: 14px
+}
+
+.inputTextPrompt:hover {
+    font-size: 14px
+}
+
+.btnButtonUpload {
+    font-size: 14px
+}
+
+.btnButtonUpload:hover {
+    font-size: 14px
+}
+
+.pageButton {
+    font-size: 14px
+}
+
+.pageButton:hover {
+    font-size: 14px
+}
+
+.templateBox .templateTitle {
+    font-size: 14px
+}
+
+.grayline_notop .title h1 {
+    font-size: 14px
+}
+
+.MustFillColor:hover,
+.MustFillColor:link,
+.MustFillColor {
+    font-size: 14px
+}
+
+.box_search2 li .text2 h1 strong {
+    font-size: 14px
+}
+
+.Pagebar .page #pager_b,
+.Pagebar .page #pager_t {
+    font-size: 14px
+}

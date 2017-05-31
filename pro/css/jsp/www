@@ -1,0 +1,39 @@
+<table style="TABLE-LAYOUT: fixed" id="portalMain" border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+    <colgroup>
+        <col width="50%"/>
+        <col width="20%"/>
+        <col width="30%"/>
+    </colgroup>
+    <tr>
+      <td class="portal-column-td no-bg" width="100%" colspan="3" zone="A">
+      <div class="dm"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="portal-column-td" width="50%" zone="B">
+      <div class="dm"></div>
+      </td>
+      <td class="portal-column-td" width="50%" colspan="2" zone="C">
+      <div class="dm"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="portal-column-td" width="70%" colspan="2" zone="D">
+      <div class="dm"></div>
+      </td>
+      <td class="portal-column-td" width="30%"  zone="E">
+      <div class="dm"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="portal-column-td" width="50%" zone="F">
+      <div class="dm"></div>
+      </td>
+      <td class="portal-column-td" width="20%" zone="G">
+      <div class="dm"></div>
+      </td>
+      <td class="portal-column-td" width="30%" zone="H">
+      <div class="dm"></div>
+      </td>
+    </tr>
+</table>

@@ -1,0 +1,57 @@
+// BootStrap
+@import "bootstrap/mixins.less";
+@import "bootstrap/variables.less";
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial,Sans-serif;
+@font-family-serif:Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:sans-serif;
+@font-family-pc:"Microsoft YaHei",Helvetica, Arial,Sans-serif;
+@font-size-base:62.5%;
+@link-hover-color:#4283c5;
+@title-font-color:#202020;
+@portal-title-color:#202020;
+@portal-title-second-color:#acacac;
+
+@pt-screen-lg-min: ((@screen-lg)-220);
+@pt-screen-sm-min: ((@screen-sm)-220);
+@pt-screen-md-min: ((@screen-md)-220);
+
+//Skin
+@wh-skin-img-border: #dddddd;
+@wh-skin-section-one: #4283c5;
+@wh-skin-section-two: #86d05d;
+@wh-skin-section-three: #fc9d5e;
+@wh-skin-section-four: #ff5757;
+@wh-skin-section-button: #fa8609;
+
+@ie8-fix:~"\9";
+
+@text-size-adjust-value:none;
+
+.font-fawesome(){
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  font-family: Fawanhu;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blur(@blur-value){
+  -webkit-filter: blur(@blur-value); /* Chrome, Opera */
+  -moz-filter: blur(@blur-value);
+  -ms-filter: blur(@blur-value);
+  filter: blur(@blur-value);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=@blur-value, MakeShadow=false);
+}
+
+.text-size-adjust(@text-size-adjust-value){
+  text-size-adjust:@text-size-adjust-value;
+  -webkit-text-size-adjust:@text-size-adjust-value;
+  -ms-text-size-adjust:@text-size-adjust-value;
+  -moz-text-size-adjust:@text-size-adjust-value;
+}
+

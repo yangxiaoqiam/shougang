@@ -1,0 +1,187 @@
+// 颜色对应关系
+//---------------
+//@global-color-hd-color: #282828; --顶部设置字体颜色
+//@global-color-bg-deep : #1b8ba3; --背景渐变色 深
+//@global-color-bg-light: #2ab3d1; --背景渐变色 浅
+
+@import "../../../less/global/template.global.less";
+@import "../../../less/template.bootstrap.theme.wh.less";
+@import "color/var-global.less";
+@import "color/var-pure.less";
+.theme-mixin(
+  @colorName,
+  @colorType,
+	@global-color,
+	@global-color-hd-color:#282828,
+	@global-color-bg-deep:darken(@global-color, 10%),
+	@global-color-bg-light:tint(@global-color, 20%),
+	@global-color-bghover-deep:darken(@global-color, 5%),
+	@global-color-bghover-light:darken(@global-color, 2%)
+) {
+  .theme-@{colorType}-@{colorName}{
+    //IE8中，纯色三套皮肤才需要加边框线
+    .wh-hd-custom-switch{
+      border-width:0 1px 1px 1px @ie8-fix;
+      border-color: @global-color @ie8-fix;
+      border-style: solid @ie8-fix;
+    }
+
+    .wh-header{
+      border-bottom:0;
+    }
+    //菜单背景色
+    .wh-hd-l-nav{
+      background:@global-color-bg-light;
+      dd{
+        //默认色
+        .fa{
+          color: @global-color-white;
+        }
+        >a >span{
+          color: @global-color-white;
+        }
+
+        //激活色
+        &.open,
+        &:active,
+        &:focus,
+        &:hover{
+          >a{
+            border-bottom: 0;
+          }
+          >a >span{
+            color: @global-color-white;
+          }    
+        }
+      }
+      dd.wh-hd-l-gateway,
+      dd.wh-hd-l-gateway:hover{
+        >a{
+          border-bottom:2px solid @global-color-bg-light;
+        }
+      }
+      //自定义菜单主图标
+      dd.wh-hd-menu-btn{
+        //移入或者点击后       
+        &:hover,
+        &.open{
+          >a{
+            border-bottom: 0;
+          }
+          .wh-hd-custom-switch{
+            .fa{
+              color: @global-color;
+            }
+            .wh-hd-custom-menu-d:hover{
+              >a >span,
+              .fa{
+                color: @global-color-white;
+              }
+            }
+            a.wh-hd-custom-menu-btn{
+              >span{
+                color:@global-color-hd-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //统一下拉菜单背景色
+    .wh-hd-custom-switch,
+    .wh-hd-custom-menu,
+    .wh-hd-menu-add-cut{
+      background:@global-color-white;
+    }
+
+    //箭头
+    .open{      
+      span.s-point{
+        border-bottom-color:@global-color;
+        em{
+          border-bottom-color:@global-color-white;
+        }
+      }
+    }
+    //下拉后自定义表现
+    .wh-hd-custom-switch{
+      //自定义菜单表现按钮集
+      .wh-hd-custom-menu-d{
+        background-color: @global-color-white;
+        >a{
+          color: @global-color-hd-color;
+          .fa{
+            color: @global-color;
+          }
+        }
+        &:hover{
+          background-color:@global-color-bg-deep;
+        }
+      }
+      //自定义菜单按钮
+      .wh-hd-custom-menu-btn{
+        >span{
+          color:@global-color-hd-color
+        }
+      }
+      //自定义菜单编辑页的两种状态
+      .wh-hd-menu-cut,
+      .wh-hd-menu-add{
+        background: @global-color-white;
+        a.prev{
+          >.fa{
+            color:@global-color;
+          }
+        }
+        li{
+          //添加样式
+          .wh-hd-custom-menu-d-add{
+            border: 1px solid @global-color-white;
+            >a >.fa{
+              color: @global-color;
+            }
+          }
+          //删除样式
+          .wh-hd-custom-menu-d-del{ 
+            border: 1px dotted @global-color-white; 
+            background-color: @global-color;
+            >a >.fa,
+            >a >span{
+              color:@global-color-white!important;
+            }
+          }         
+        } 
+      }
+    }
+  	.wh-hd-r-nav {
+  	  background-color: @global-color-bg-light;
+  	  li {
+  	    &:hover {
+  	      .wh-r-nav-a,
+  	      .wh-r-nav-a.on {
+  	        background-color: @global-color-bghover-light;
+  	        .fa {
+  	          color: @global-color-white;
+  	        }
+  	      }
+  	    }
+  	  }
+  	  .wh-r-nav-a {
+  	    .fa-color {
+  	      color: @global-color-white;
+  	    }
+  	    &.on {
+  	      background-color: @global-color-bghover-light;
+        }
+  	  }
+  	}
+  	  	
+  	//头部设置wh-header .wh-container
+  	.wh-header {
+  	  .wh-container {
+  	    background-color: @global-color-bg-light;
+      }
+  	}
+  }
+}

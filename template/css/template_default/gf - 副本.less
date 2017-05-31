@@ -1,0 +1,470 @@
+
+.mh-header-tips{
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    z-index: 99999;
+}
+
+
+
+
+
+
+.wh-wrapper .wh-header{
+    border-bottom: 1px solid #ddd;
+     top:41px;
+     padding: 5px 0;
+}
+.wh-wrapper .wh-header .wh-container{width:1150px;margin:0 auto;position:relative;}
+
+.wh-hd-l-nav>dd>a i.fa{display:none;}
+.wh-hd-l-nav>dd>a i.fa.fa-th-large,.wh-hd-l-nav>dd>a i.fa.fa-angle-down{display:inline-block;color:#a1a3a9;}
+.wh-hd-l-nav dd a span{font-size: 16px;}
+.wh-header .wh-container .wh-logo,.wh-header .wh-container .wh-logo img{width:250px;max-width:250px;}
+@media (min-width: 1200px){
+.wh-hd-r-nav li {
+    padding: 0 5px;
+
+}
+}
+
+.wh-wrapper .wh-content{
+    top:227px;
+}
+
+
+
+//自定义模块-用户信息
+.pro-user-info {
+    text-align:left;
+    >img {
+        border-radius: 100%;
+        border: 3px solid #d6d6d6;
+        float: left;
+        width: 87px;
+        height: 87px;
+        display: block;
+        margin-top: 10px;
+    }
+    .user-info {
+        margin-left: 112px;
+        padding-top: 15px;
+        strong {
+            font-size:20px;
+        }
+        span.work {
+            margin-left: 27px;
+        }
+        >i {
+            cursor: pointer;
+            display: inline-block;
+            width: 17px;
+            height: 10px;
+            &.up {
+                background-position: -112px -195px;
+            }
+        }
+        p {
+            padding: 4px;
+            margin: 0;
+            font-size:15px;
+            &.date{
+                margin:5px 0 -5px 0;
+            }
+            &.department {
+                color: #898282;
+                margin-top: 3px;
+            }
+        }
+    }
+    .wh-hd-user-detail {
+        width: 202px;
+        top: 33px;
+        position: absolute;
+        padding: 5px 13px;
+        background: #fff;
+        font-size: 12px;
+        display: none;
+        background:#fff;
+        border:1px solid #ccc;
+        z-index:999;
+        a {
+            span {
+                color: #505050;
+            }
+        }
+        .wh-hd-user-welcome {
+            padding-bottom: 6px;
+            .welcomea {
+                text-align: left;
+                display: block;
+                cursor: default;
+                span {
+                    cursor: default;
+                    display: inline-block;
+                    width: 56px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                em {
+                    cursor: default;
+                    display: inline-block;
+                    max-width: 112px;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .fa {
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+                &.active {
+                    .fa {
+                        &:before {
+                            content: '\f007';
+                        }
+                    }
+                }
+            }
+            .wh-hd-user-welcome-title {
+                border-radius: 100%;
+                img {
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    margin: 0 10px 0 0;
+                }
+                a {
+                    float: left;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+  /*                   color: @pro-global-color; */
+                    &.welcome-skin-btn,
+                    &.welcome-help-btn {
+                        margin-right: 18px;
+                        display: inline-block;
+                    }
+                    &.welcome-help-btn {
+                        margin-right: 0;
+                    }
+                    &.wel-p-info {
+                        width: 68px;
+                        max-width: 68px;
+                    }
+                    &.wh-hd-user-center {
+                        max-width: 74px;
+                        span {
+                            margin: 0;
+                        }
+                    }
+                    .fa {
+                        margin: 0;
+                    }
+                }
+                span {
+                    float: left;
+                    margin: 0 20px;
+                }
+            }
+            .wh-hd-font-click-change {
+                em {
+                    cursor: pointer;
+                    margin: 0 5px;
+                }
+                .wh-font-small {
+                    font-size: 12px;
+                }
+                .wh-font-big {
+                    font-size: 14px;
+                }
+            }
+            .wh-hd-statecontainer {
+                overflow: hidden;
+                height: 0;
+                max-height: 0;
+                /* .transition(max-height .3s ease); */
+                &.current {
+                    height: 100%;
+                    max-height: 500px;
+                    /* .transition(max-height .3s ease); */
+                }
+            }
+        }
+    }
+}
+.pro-user-info .user-info p{padding:4px 0;}
+
+.pro-user-nav {
+    margin-left: 400px;
+    ul {
+        float: right;
+        li {
+            width: 118px;
+            text-align: center;
+            float: left;
+            position: relative;
+            a {
+                color: #505050;
+            }
+            &:hover {
+                a {
+                    /* color: @pro-global-color; */
+                }
+            }
+            em {
+                background-color: #d61138;
+                color: #fff;
+                padding: 2px;
+                border-radius: 10px;
+                position: absolute;
+                top: 15px;
+                right: 32px;
+                font-size: 12px;
+            }
+            i {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                background: url("../../images/pro/icon.png");
+            }
+            p {
+                line-height: 35px;
+            }
+            &.db {
+                &:hover {
+                    i {
+                        background-position: 0 -80px;
+                    }
+                }
+                i {
+                    background-position: 0 0;
+                }
+            }
+            &.yb {
+                &:hover {
+                    i {
+                        background-position: -80px -80px;
+                    }
+                }
+                i {
+                    background-position: -80px 0;
+                }
+            }
+            &.wd {
+                &:hover {
+                    i {
+                        background-position: -160px -80px;
+                    }
+                }
+                i {
+                    background-position: -160px 0;
+                }
+            }
+            &.sg {
+                &:hover {
+                    i {
+                        background-position: -400px -80px;
+                    }
+                }
+                i {
+                    background-position: -400px 0;
+                }
+            }
+            &.gr {
+                &:hover {
+                    i {
+                        background-position: -240px -80px;
+                    }
+                }
+                i {
+                    background-position: -240px 0;
+                }
+            }
+            &.zh {
+                &:hover {
+                    i {
+                        background-position: -320px -80px;
+                    }
+                }
+                i {
+                    background-position: -320px 0;
+                }
+            }
+        }
+    }
+}
+
+
+.wh-personal-card-content .wh-personal-card-state .per-wh-hd-user-state a.current .fa:after, .wh-personal-card-content .wh-personal-card-state .per-wh-hd-depart-state a.current .fa:after {
+    content: "\f013";
+}
+.wh-personal-card-content .wh-personal-card-state .per-wh-hd-user-state .fa:after, .wh-personal-card-content .wh-personal-card-state .per-wh-hd-depart-state .fa:after {
+    content: "\f00d";
+}
+
+.wh-personal-card-content .wh-personal-card-state .per-wh-hd-depart-state, .wh-personal-card-content .wh-personal-card-state .per-wh-hd-user-state {
+    width: 100%;
+    display: block;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.pro-user-info{float:left;}
+.quick-link{
+         position: absolute;
+    left: 290px;
+    right: 0;
+    top:4px;
+    text-align:center;
+    li{
+        float:left; 
+        width:12%;
+         font-size:15px;
+         position:relative;
+         &:hover{
+            .s-dropdown{
+                display:block;
+                a:hover{
+                    color:black;
+                }
+            }
+         }
+         .s-dropdown{
+            display:none;
+                    position:absolute;
+                    top:85px;
+                    left:0px;
+                    width:125px;
+                    background:white;
+                    background: #fff;
+                   -webkit-box-shadow: -1px 5px 6px #9e9e9f;
+                   box-shadow: -1px 5px 6px #9e9e9f;
+                   padding-left: 9px;
+                   padding:5px 0 10px 10px;
+            p{
+                width: 110px;
+                text-align: left;
+                    height: 24px;
+                  line-height: 24px;
+                font-size:12px;
+                i{
+                    display:inline-block;
+                    height: 24px;
+                    line-height: 24px;vertical-align: middle;
+                    vertical-align: middle;
+                }
+                  a{
+                        display: inline-block;
+                        width: 70px;
+                        margin-right: 6px;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: #b2b2b2;
+                        margin-left:4px;
+                        height: 24px;
+                        line-height: 24px;
+
+                  }
+
+                  span{
+                    display: inline-block;
+                    min-width: 10px;
+                    float: right;
+                    color:red;
+                    height: 24px;
+                     line-height: 24px;
+                }
+
+            }
+            
+            
+
+          }
+         a{
+            font-size:15px;
+         }
+       
+        a i{
+            background: url(../../../images/ver113/shougang/icons04.png);
+            display:block;
+            width:70px;
+            height:60px;
+            margin:0 auto;
+            position:relative;
+             font-size:14px;
+             margin-bottom: 5px;
+
+            span{
+                display:block;
+                position:absolute;
+                    right: 5px;
+                   top: 12px;
+                background:red;
+                color:white;
+                border-radius: 10PX;
+                font-size: 12PX;
+                padding:2px 4px;
+
+            }
+            
+            &.i1{
+                 background-position:12px 18px;
+            }
+            &.i2{
+                 background-position:-80px 18px;
+            }
+        
+            &.i3{
+                 background-position:-177px 15px;
+            }
+            &.i4{
+                 background-position:-268px 15px;
+            }
+             &.i5{
+                 background-position:-365px 15px;
+            }
+            &.i6{
+                 background-position:-460px 15px;
+            }
+            &.i7{
+                 background-position:-555px 15px;
+            }
+            &.i8{
+                 background-position:-638px 15px;
+            }
+           
+        }
+    }
+    li:hover{
+        a i{
+            background-image: url(../../../images/ver113/shougang/icons041.png);
+        }
+    }
+}
+
+.perbox{
+    width:1150px;
+    height:100px;
+    margin:0 auto;
+    position:relative;
+    z-index:9999;
+    margin-top:112px;
+}
+
+
+

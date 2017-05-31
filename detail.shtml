@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-red theme-red-pure size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <title>信息详情页</title>
+  <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+   <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+  <link rel="stylesheet" href="template/css/template.bootstrap.min.css" />
+  <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+  <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/static/template.js"></script>
+  <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+  <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+
+  <!--add  css  -->
+
+
+</head>
+
+<body>
+
+
+
+  
+</body>
+
+</html>

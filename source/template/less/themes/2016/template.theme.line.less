@@ -1,0 +1,41 @@
+@import "../../../less/global/template.global.less";
+@import "../../../less/template.bootstrap.theme.wh.less";
+@import "color/var-global.less";
+@import "color/var-line.less";
+.theme-mixin(
+	@colorName,
+	@colorType,
+	@global-color,
+	@global-color-nav-bottom:darken(@global-color, 10%)
+) {
+  .theme-@{colorType}-@{colorName}{
+
+  	.wh-header{
+			border-bottom:6px solid @global-color;
+		}
+		.wh-hd-l-nav{
+			dd{
+				&:hover{
+					>a{						
+						border-bottom:2px solid @global-color-white;
+					}
+				}
+				&.wh-hd-l-gateway,
+				&.wh-hd-l-gateway:hover{
+					>a{
+						border-bottom:2px solid @global-color-white;
+					}
+				}
+				&.wh-hd-menu-btn,
+				&.wh-hd-menu-btn:hover{
+					>a{
+						border-bottom-width: 0;
+					}
+				}
+			}
+		}
+		.wh-content{
+			top:75px;
+		}
+	}
+}

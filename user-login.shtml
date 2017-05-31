@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.logins.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/login-new.css">  
+</head>
+<body>
+<div class="wh-wrapper">
+    <div class="wh-pg-login">
+        <div class="wh-main">
+            <div class="wh-login-top">
+                <h1><img id="loginPic" src="images/ver113/login/logo.png" data-pich="70"/></h1>
+                <ul class="wh-login-tips">
+                    <li class="bw-new-li"><a href="##"><i class="fa fa-plus-circle"></i><span>App下载</span></a>
+                        <div class="bw-new-app">
+                            <div class="wh-lg-logoIn-top"  style="display: block; ">
+                                <div class="flexslider3">
+                                    <ul class="slides">
+                                        <li><img src="images/ver113/login/login_02.jpg" /></li>
+                                        <li><img src="images/ver113/login/login_02.jpg" /></li>
+                                        <li><img src="images/ver113/login/login_03.jpg" /></li>
+                                    </ul>
+                                </div>
+                                <p>移动办公客户端</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="##"><i class="fa fa-cog2"></i><span>安装控件</span></a></li>
+                    <li><a href="##"><i class="fa fa-question-circle"></i><span>设置帮助</span></a></li>
+                </ul>
+            </div>
+            <div class="wh-login-cons wh-lg-no-button"> 
+                <div class="wh-lg-loIn-bg"></div>
+                <!--移动版本-->
+                <div class="wh-lg-logoIn" >
+                    <div class="wh-lg-logoIn-top" >
+                        <!-- <img src="images/ver113/login/user.jpg" class="user"/> -->
+                        <p class="wh-login-xitong">系统登录</p>
+                        <form name="frm" action="" method="post" target="_self">
+                            <div class="vali-username">
+                                <i class="fa fa-user"></i>
+                                <!-- <span>用户名：</span> -->
+                                <input type="text" name="username" id="username" placeholder="用户名" class="info" onClick="aa()"/>
+                            </div>
+                            <div class="vali-pass">
+                                <i class="fa fa-lock"></i>
+                                <!-- <span>密码：</span> -->
+                                <input type="password" name="password" id="password" value="密码" class="info" onClick="bb()"/>
+                            </div>
+                            <!-- <div class="vali-image clearfix">
+                                <input type="text" name="image" id="image" class="image" value="验证码"/>
+                                <img src="images/ver113/login/validate.jpg" />
+                            </div> -->
+                            <div class="pass-check ">
+                                <input type="checkbox" name="isRemember" class="checkpass"/>
+                                <span>记住密码</span>
+                            </div>
+                             <div class="vali-submit">
+                                <input type="submit" name="submit" id="submit" class="sub" value="登录" />
+                            </div>
+                        </form>
+                        <!-- <div class="wh-lg-lang-sele">
+                            <div class="sele-show"><span>简体中文</span><i class="fa fa-angle-right"></i></div>
+
+                            <div class="sele-list-div"></div>
+                            <ul class="sele-list clearfix">
+                                <li><span class="sl1">简体中文</span><i class="fa fa-check-circle-o"></i></li>
+                                <li class="current"><span class="sl2">繁體中文</span><i class="fa fa-check-circle-o"></i></li>
+                                <li><span class="sl3">English</span><i class="fa fa-check-circle-o"></i></li>
+                                <li><span class="sl4">대한민국</span><i class="fa fa-check-circle-o"></i></li>
+                                <li><span class="sl5">日本语</span><i class="fa fa-check-circle-o"></i></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                  <!--   <div class="wh-lg-logoIn-top"  style="display: none; ">
+                        <div class="wh-lg-logoIn-top-title" ><i class="fa fa-info-circle ipersonal"></i><span>请使用手机打开微信或微博的“扫一扫”功能</span></div>
+                        <div class="flexslider1">
+                            <ul class="slides">
+                                <li><img src="images/ver113/login/login_01.jpg" /></li>
+                                <li><img src="images/ver113/login/login_02.jpg" /></li>
+                                <li><img src="images/ver113/login/login_03.jpg" /></li>
+                            </ul>
+                        </div>
+                        <p>万户网络移动办公客户端</p>
+                    </div>
+
+                    <ul class="wh-lg-logoIn-nav">
+                        <li class="current one">普通登录</li>
+                        <li class="two">移动版</li>
+                    </ul> -->
+                </div> 
+            </div> 
+        </div>
+        <!-- 登录背景切换 -->
+        <div class="wh-lg-slider">  
+            <div class="wh-lg-flexslider-bg">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li style="background-image:url('images/ver113/login/bg_login_sd.jpg')"></li>
+                        <li style="background-image:url('images/ver113/login/slider3.jpg')"></li>
+                        <li style="background-image:url('images/ver113/login/slider3.jpg')"></li>
+                    </ul>
+                </div>
+            </div>        
+            <div class="wh-lg-copy">
+                版权所有：北京万户网络  © 1998-2015 whir.All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="wh-pg-login-bg" style="background-image: url(../images/ver113/login/bg_login_sd.jpg)"></div> -->
+<!-- <div class="wh-pg-login-bg-out" style="background-image: url(../images/ver113/login/bg_login_sd.jpg)"></div> -->
+<!-- <div class="wh-iewarning">
+    <div class="wh-iewarn-box" style="display:none">
+        <h2 class="clearfix"><strong>温馨提示</strong><a class="close" href="javascript:void(0)"></a></h2>
+        <table>
+            <tr>
+                <td>
+                    <i class="wh-iewarn-notice"></i>
+                    <em>很抱歉，您当前的浏览器版本过低，请升级您的浏览器获得最佳使用体验！</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><a class="wh-iewarn-btn" href="####" target="_blank">升级到IE8</a></p>
+                    <p><a href="#">谷歌浏览器</a><a href="#">火狐浏览器</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="wh-iewarn-box" style="display:block">
+        <h2 class="clearfix"><strong>温馨提示</strong><a class="close" href="javascript:void(0)"></a></h2>
+        <table>
+            <tr>
+                <td>
+                    <i class="wh-iewarn-notice"></i>
+                    <em>很抱歉，您当前的浏览器版本过低，请升级您的浏览器获得最佳使用体验！</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><a class="wh-iewarn-btn wh-iewarn-btn-disable" href="####" target="_blank">暂不升级</a><a class="wh-iewarn-btn" href="####" target="_blank">升级到IE9</a></p>
+                    <p><a href="#">谷歌浏览器</a><a href="#">火狐浏览器</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="wh-iewarn-wrap"></div>
+</div> -->
+<script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        //动态赋高
+        function scrh(obj){
+            var scrHeight=document.body.scrollHeight;
+            //var srcHeight = $(window).height;
+            obj.css({'height':scrHeight});
+        }
+
+        $(function(){
+            var scrH=$(".wh-pg-login,.wh-lg-slider");
+            scrh(scrH);
+
+            var resizeTimer;
+            function resizeFunction() {
+                scrh(scrH);
+            };
+
+            $(window).resize(function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(resizeFunction, 300);
+            });            
+            resizeFunction()
+
+            $(".flex-next").text('');
+            $(".flex-prev").text('');
+            //click language selection
+            var sele_bd = $(".sele-list-div");
+            var sele_list = $(".sele-list");
+            var wh_llnav = $(".wh-lg-logoIn-nav li");
+            var wh_lltop = $(".wh-lg-logoIn-top");
+
+            $(".sele-show").click(function () {
+                sele_bd.show();
+                sele_list.show(200);
+                return false;
+            });
+
+            sele_list.find("li").click(function(){
+                sele_list.hide();
+                sele_bd.hide();
+                return false;
+            });
+
+            $("body").click(function () {
+                sele_bd.hide();
+                sele_list.hide();
+            });
+
+            $(".info").focus(function(){
+                $(this).parent().css("border-color","#0c89e1");
+            });
+            $(".info").blur(function(){
+                $(this).parent().css("border-color","#666");
+            });
+            $(".info").hover(function(){
+                $(this).parent().css("border-color","#0c89e1");
+            },function(){
+                $(this).parent().css("border-color","#666");
+            });
+            $(".image").hover(function(){
+                $(this).css("border-color","#0c89e1");
+            },function(){
+                $(this).css("border-color","#666");
+            });
+
+            wh_llnav.on("click",function(){
+                var $this = $(this);
+                var index = $this.index();
+                $this.addClass("current").siblings().removeClass("current");
+                wh_lltop.hide().eq(index).show();
+                if(index == 1){
+                    $('.flexslider1').flexslider({
+                        animation: "slide",
+                        directionNav: true,
+                        controlNav: false,
+                        slideshowSpeed: 700000
+                    });
+                }
+            });
+        });
+
+        //轮播
+        $('.flexslider').flexslider({
+            directionNav: false,
+            controlNav: true
+        });
+
+      $(".flexslider3").flexslider({
+          animation: "slide",
+          directionNav: true,
+          controlNav: false,
+          slideshow: true, 
+       });
+     /* $(".bw-new-li").click(function(){
+       if($(".bw-new-app").hasClass("open")){
+
+           $(".bw-new-app").removeClass("open");
+           
+         }
+         else{
+            $(".bw-new-app").addClass("open");
+           }
+
+      })*/
+
+     
+
+
+        //获取Logo图片高度
+        var picHeight = parseInt($("#loginPic").data('pich')+"px");
+        var picMarginTop = "-"+parseInt($("#loginPic").data('pich'))/2+"px";
+        $("#loginPic").height(picHeight);
+        $("#loginPic").css({"height":picHeight, "margin-top":picMarginTop});
+    });
+
+    function aa(){
+      $("#username").val("");
+
+    }
+function bb(){
+      $("#password").val("");
+
+    }
+</script>
+</body>
+</html>

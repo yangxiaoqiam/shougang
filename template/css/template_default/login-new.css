@@ -1,0 +1,218 @@
+.wh-pg-login .wh-main{
+	width: 100%;
+}
+.wh-pg-login .wh-main .wh-login-top{
+	background: #fff;
+	overflow:inherit;
+}
+.wh-pg-login .wh-main .wh-login-top h1{
+	height: 60px;
+	left: 40px;
+	overflow:hidden;
+}
+.wh-pg-login .wh-main .wh-login-top h1 img{max-height: 54px;height:54px; margin-top: -27px;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips{
+	right: 40px;
+	bottom: 0;
+}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a{
+	color: #000;
+	text-shadow:none;
+}
+.wh-pg-login .wh-main .wh-lg-loIn-bg{
+	background: none;
+	left: 50%;
+    top: 220px;
+}
+.wh-pg-login .wh-main .wh-login-cons.wh-lg-no-button .wh-lg-logoIn{
+	left: 53% !important;
+	top: 200px !important;
+	height:310px;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top{height:310px;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div input.sub{
+	    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    background: #d50032;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-submit{
+	right: 8px;
+	top: 130px;
+	position:absolute;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-pass, .wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-username{
+	width: 240px;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div input.sub:hover{
+	background-image: -webkit-linear-gradient(top,#d50032 0,#d50032 100%);
+    background-image: -o-linear-gradient(top,#d50032 0,#d50032 100%);
+    background-image: linear-gradient(to bottom,#d50032 0,#d50032 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0c88e0', endColorstr='#ff064f84', GradientType=0);
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form{
+	margin-top: 0;
+	width:250px;
+}
+.wh-lg-logoIn-top .wh-login-xitong{
+	color: #fff !important;
+    font-size: 19px !important;
+    text-align: left;
+    text-indent: 55px;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-pass, .wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-username{
+	border: 1px solid #fff !important;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div i{
+	color: #fff;
+}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div input{
+	color: #fff;
+}
+.bw-new-li{
+	position: relative;
+}
+.bw-new-li .bw-new-app{
+	width: 200px;
+	background:#fff;
+	position: absolute;
+	z-index: 9999;
+	top: 38px;
+	right: -99px;
+		padding:25px 0 10px 0;
+		display:none;
+		transition:all .3s;
+		-wekbit-transition:all .3s;
+}
+.bw-new-li .bw-new-app.open{display:block;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a span{font-size:14px;}
+
+.bw-new-app p{text-align:center;color:#333;font-size:15px;text-shadow:none;height:30px;line-height: 30px;}
+
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-pass,
+ .wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.vali-username{background:url(/defaultroot/modules/borgward/static/images/bg21.png)}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 {padding: 0;width: 120px;height:120px; margin: 0 auto;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 .slides > li {display: none;margin-left: 0; -webkit-backface-visibility: hidden;width:155px; height: 155px;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 .slides img {width: 120px;height:120px; display: block;height:125px;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 .slides > li div{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 37px;
+	background: url("../img/dbg.png") 0 0 repeat;
+
+	 
+}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 .slides > li div p{
+	font-size: 13px;
+	color: #fff;
+	padding: 0 15px;
+	line-height: 18px;
+	margin-top: 9px;
+}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips .flexslider3 .slides > li div span{
+	font-size: 12px;
+	color: #c5c4c4;
+	line-height: 25px; 
+	padding: 0 15px; 
+}
+.flexslider3 .flex-direction-nav { *height: 0;} 
+.flexslider3 .flex-direction-nav a  { text-decoration:none; display: block; width: 27px; height: 27px; margin: -20px 25px 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; cursor: pointer; color: rgba(0,0,0,0.8); text-indent:-999em;outline: none;}
+ .flexslider3 .flex-direction-nav .flex-prev { background: url("/defaultroot/modules/borgward/static/images/pre-a.png") 0 0 no-repeat;}
+.flexslider3 .flex-direction-nav .flex-next { background: url("/defaultroot/modules/borgward/static/images/next-a.png") 0 0 no-repeat; }
+.flexslider3 .flex-direction-nav .flex-prev { background: url("../../../images/ver113/login/pre-a.png") 0 0 no-repeat;}
+.flexslider3 .flex-direction-nav .flex-next { background: url("../../../images/ver113/login/next-a.png") 0 0 no-repeat;}
+
+
+.flexslider3 .flex-prev { left: -17px; }
+.flexslider3 .flex-next { right: -17px; }
+
+.flex-pauseplay span {text-transform: capitalize;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div i{display:none;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div input.info{margin-left:13px;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a i{display:inline-block;width:18px;height:18px;font-size:18px;color:#313131;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a i.fa-plus-circle:before{content: none;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a i.fa-plus-circle{background:url(/defaultroot/modules/borgward/static/images/wx2.png) center no-repeat;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a span{top:-4px;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a:hover,.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a.red{color:#d50032;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a:hover i{color:#d50032;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a:hover i.fa-plus-circle{background:url(/defaultroot/modules/borgward/static/images/wx1.png) center no-repeat;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li a.red i.fa-plus-circle{background:url(/defaultroot/modules/borgward/static/images/wx1.png) center no-repeat;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li.bw-new-li.open a,.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li.bw-new-li.open i{color:#d50032;}
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li.bw-new-li.open i.fa-plus-circle{background:url(/defaultroot/modules/borgward/static/images/wx1.png) center no-repeat;}
+
+.wh-pg-login .wh-main .wh-login-top ul.wh-login-tips li{height:60px;line-height: 60px;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div{margin-bottom: 23px;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.pass-check {
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+}
+.wh-pg-login .wh-main .wh-login-cons.wh-lg-no-button .wh-lg-logoIn{height:310px;width:365px;}
+.wh-pg-login .wh-main .wh-login-cons.wh-lg-no-button .wh-lg-logoIn p{padding:22px 0; }
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div input{font-size:14px;background:transparent;}
+.wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div.pass-check span{font-size:13px;}
+ .wh-pg-login .wh-main .wh-lg-logoIn .wh-lg-logoIn-top form div em{
+	position:absolute;
+	left:5px;
+	top:0px;
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+	z-index:20;
+} 
+/* input::-webkit-autofill, textarea::-webkit-autofill, select::-webkit-autofill {background:transparent !important;} */
+.wh-lg-logoIn :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;  
+}
+
+.wh-lg-logoIn ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+.wh-lg-logoIn input:-ms-input-placeholder,
+.wh-lg-logoIn textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+.wh-lg-logoIn input::-webkit-input-placeholder,
+.wh-lg-logoIn textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

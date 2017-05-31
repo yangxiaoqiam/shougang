@@ -1,0 +1,39 @@
+
+.zz-file {
+	width:90%;
+	margin:0 auto;
+}
+.zz-file li { float:left;width:100%; margin-bottom:12px;box-sizing: border-box;padding:0 8px;}
+.zz-file li a{ 
+	  display:block;
+	 border:1px solid #9ddaf7; 
+	 background:#e9f4ff url(../../../images/ver113/shougang/zz-img1.png) 10px center no-repeat;
+	 height:20px;
+	 line-height:20px;
+	 text-indent: 35px;
+	 padding:12px 0;
+	 text-indent:45px;
+	 font-size:14px;
+	 padding-right:5px;
+     text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: keep-all;
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+
+  .zz-file2 li{
+    width:50%;
+  }
+
+  .zz-file3 li{
+    width:33.333%;
+<<<<<<< HEAD
+  }
+
+
+  .wh-portal-i-title .wh-portal-i-title-left{
+  	 width: 80%;
+=======
+>>>>>>> 7d6d3728f8b44391ea3b4a837688bf5b1443791c
+  }

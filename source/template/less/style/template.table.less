@@ -1,0 +1,63 @@
+//视图表格
+.wh-view{
+  .table-over{
+    overflow-y: hidden;
+    overflow-x: auto;
+    table{
+      width: 100%;
+    }
+    .view-hdpanel{
+      table.table{
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  table.table {
+    tr{
+      &.even{
+        td{
+          background-color:#ddd;
+        }
+      }
+      &.odd{
+        td{
+          background-color:red;
+        }
+      }
+    }
+    th,
+    td {
+      padding: 10px 5px;
+      border-color: #CFD0D0;
+      &.tb-col{        
+        &-left {
+          text-align: left;
+        }
+        &-center {
+          text-align: center;
+        }
+        &-right{
+          text-align: right;
+        }
+      }
+      em.red-point {
+        color: red;
+        margin-right: 6px;
+      }
+      img.icon{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%; 
+      }      
+    }
+    th {
+      strong,span{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.wh-view .table-over table{margin-bottom: 0px;}
+.wh-view .table-over table td.txl_td_middle{vertical-align: middle;}

@@ -1,0 +1,23 @@
+this.hide(); 
+that.title(i + '秒后关闭'); 
+that.close(); 
+this.min(); /* 这里调用了最小化方法 */ 
+api1.get('LHG76D',1).content('我改变了窗口内容，并在2秒后关闭').time(2);
+button: [{ 
+        name: '管理', 
+        callback: function () { 
+            this 
+            .content('我更改了删除按钮') 
+            .button({ 
+                name: '删除', 
+                disabled: false 
+            }) 
+            .lock(); 
+            return false; 
+        }, 
+        focus: true 
+}] 
+
+this.reload(); 
+time: 2, 
+

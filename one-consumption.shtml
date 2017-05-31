@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-blue theme-blue-pure size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title>信息详情页</title>
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template.bootstrap.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/static/template.js"></script>
+    <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+    <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+    <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+    <!--add  css  -->
+    <link rel="stylesheet" type="text/css" href="pro/css/onecard.css">
+</head>
+
+<body>
+    <!-- 考勤信息表 -->
+    <div class="consumption">
+        <h3>消费</h3>
+        <div class="consumption-liatbox fl">
+            <div class="list bluebg">余额 <em>￥ 30.0</em></div>
+            <div class="list">最后消费 <i class="fa fa-angle-right fr"></i> <em>2017-04-09 11:24  ￥8</em></div>
+            <div class="list two" style="border:0 none;">最后充值 <em>餐补  200<br>2017-04-09 11:24  ￥8</em></div>
+            <div class="title-b bluebg">迁钢信息卡餐补充值</div>
+            <p>每月26日08:00起为下个月工作餐餐补充值时间</p>
+            <p style="border:0 none">可在公司各餐厅及小区餐厅固定充值处充值</p>
+            <div class="bluebg title-a">迁钢现金充值
+                <br>
+                <font>每次充值不得少于30元</font>
+            </div>
+            <div class="title-a"><strong>厂区--办公中心108室</strong>
+                <br>
+                <font>每周二、四下午13:00至17:00</font>
+            </div>
+        </div>
+        <div class="last-consumption fr">
+         <ul>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥811</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8334</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8</a>
+            </li>
+            <li>
+                <p><strong>2017/4/9 11:34:36</strong></p>
+                <p>东配楼2080</p>
+                <a>￥8</a>
+            </li>
+         </ul>
+
+    </div>
+    </div>
+</body>
+
+</html>

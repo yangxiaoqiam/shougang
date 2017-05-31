@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-blue theme-blue-pure size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title>信息详情页</title>
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template.bootstrap.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/static/template.js"></script>
+    <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+    <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+    <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+    <!--add  css  -->
+    <link rel="stylesheet" type="text/css" href="pro/css/onecard.css">
+</head>
+
+<body>
+    <!-- 考勤信息表 -->
+    <div class="kq-list" style="width:800px;margin:0 auto;">
+        <h3>考勤信息表</h3>
+        <div class="tab">
+            <div>
+                <i class="fa fa-angle-left"></i> <span>2017-04</span> <i class="fa fa-angle-right"></i><a class="btn btn-wh-line">本月</a>
+            </div>
+        </div>
+        <p class="month-title">2017年4月考勤</p>
+        <ul class="kg-detail fl" style="display: block;width:49%">
+            <li class="clearfix">
+                <span>上班</span>
+                <em class="fr">3</em>
+            </li>
+            <li class="clearfix">
+                <span>应上班</span>
+                <em class="fr">3</em>
+            </li>
+            <li class="clearfix">
+                <span>剩余班次</span>
+                <em class="fr">3</em>
+            </li>
+            <li class="clearfix">
+                <span>漏刷卡</span>
+                <em class="fr red">3</em>
+            </li>
+            <li class="clearfix">
+                <span><i class="fa fa-angle-up"></i> 2017-04-01  17：00</span>
+                <em class="fr red">漏刷卡</em>
+            </li>
+        </ul>
+        <div class="list-aa fr" style="width:49%">
+            <div>
+                <p class="t-left">2017-04-08 星期五</p>
+                <p class="t-right">12：00:00 生产中心</p>
+                <p class="t-right">12：00:00 生产中心</p>
+            </div>
+            <div>
+                <p class="t-left">2017-04-08 星期五</p>
+                <p class="t-right">12：00:00 生产中心</p>
+                <p class="t-right">12：00:00 生产中心</p>
+            </div>
+            <div>
+                <p class="t-left">2017-04-08 星期五</p>
+                <p class="t-right">12：00:00 生产中心</p>
+                <p class="t-right">12：00:00 生产中心</p>
+            </div>
+            <div>
+                <p class="t-left">2017-04-08 星期五</p>
+                <p class="t-right">12：00:00 生产中心</p>
+                <p class="t-right">12：00:00 生产中心</p>
+            </div>
+            <div>
+                <p class="t-left">2017-04-08 星期五</p>
+                <p class="t-right">12：00:00 生产中心</p>
+                <p class="t-right">12：00:00 生产中心</p>
+            </div>
+          
+        </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function() {
+
+    //考勤信息表
+
+    $(".kq-list .month-title").click(function() {
+        $(this).next("ul").show();
+        $(this).siblings(".month-title").next("ul").hide();
+    })
+
+})
+</script>
+
+</html>

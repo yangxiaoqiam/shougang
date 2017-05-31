@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="x-strict">
+
+<head>
+    <title>信息列表</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script src="scripts/plugins/jquery/jquery.min.js" type="text/javascript"></script>
+   <link rel="stylesheet" type="text/css" href="template/css/template_default/selectcolor.css">
+      <link rel="stylesheet" type="text/css" href="themes/common/common.css">
+   <link rel="stylesheet" type="text/css" href="themes/2015/color_blue/style.css">
+</head>
+
+<body>
+<div class="gf-newlb" style="width:200px;">
+   <p>添加新类别</p>
+   <div class="select-a">
+   <div class="dot fl"><img src="pro/img/icon34.png"></div>
+      <span class="color-a"></span>
+       <input type="text" class="gf-serch fl">
+       <div style="clear:both"></div>
+       <div class="dropdown-a">
+             <a data-themecolor="#cd2500" title="红色" style="background-color:#cd2500"></a>
+             <a data-themecolor="#dc4fad" title="红色" style="background-color:#dc4fad"></a>
+                <a data-themecolor="#ad193d" title="红色" style="background-color:#ad193d"></a>
+             <a data-themecolor="#F27521" title="红色" style="background-color:#F27521"></a>
+                <a data-themecolor="#82ba01" title="红色" style="background-color:#82ba01"></a>
+             <a data-themecolor="#008b18" title="红色" style="background-color:#008b18"></a>
+                <a data-themecolor="#03b3b1" title="红色" style="background-color:#03b3b1"></a>
+             <a data-themecolor="#00829a" title="红色" style="background-color:#00829a"></a>
+                <a data-themecolor="#5cb2ff" title="红色" style="background-color:#5cb2ff"></a>
+             <a data-themecolor="#0073c6" title="红色" style="background-color:#0073c6"></a>
+                <a data-themecolor="#4617b5" title="红色" style="background-color:#4617b5"></a>
+             <a data-themecolor="#8c0095" title="红色" style="background-color:#8c0095"></a>
+                <a data-themecolor="#004b8c" title="红色" style="background-color:#004b8c"></a>
+             <a data-themecolor="#001941" title="红色" style="background-color:#001941"></a>
+                <a data-themecolor="#580000" title="红色" style="background-color:#580000"></a>
+             <a data-themecolor="#380001" title="红色" style="background-color:#380001"></a>
+                <a data-themecolor="#585858" title="红色" style="background-color:#585858"></a>
+             <a data-themecolor="#333" title="红色" style="background-color:#333"></a>
+             <div style="clear:both"></div>
+
+       </div>
+   </div>
+  
+   <div class="gf-newlb-btn">
+        <input type="button" class="btnButton4font" value="确 定">
+         <input type="button" class="btnButton4font" value="取 消">
+   </div>
+   
+</div>
+</body>
+
+    <script language="javascript">
+
+  
+       $(".gf-newlb .dot").click(function(){
+
+           if($(".select-a").hasClass("open")){
+
+            
+             $(".select-a").removeClass("open");
+           }
+           else{
+               $(".select-a").addClass("open");
+           }
+            /*else{
+                 $(".select-a").removeClass("open");
+            }*/
+
+            $(".dropdown-a a").click(function(){
+                 var a_className=$(this).attr("data-themecolor");
+                  $(".gf-newlb .color-a").css('background-color',a_className);
+
+            })
+
+       })
+
+
+    $(".dropdown-a a").click(function(){
+                 var a_className=$(this).attr("data-themecolor");
+                  $(".gf-newlb .color-a").css('background-color',a_className);
+                   $(".select-a").removeClass("open");
+
+            })
+  
+
+    </script>
+</html>

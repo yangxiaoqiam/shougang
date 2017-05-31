@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-line-blue size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.line.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.syly-before.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <!--- top  -->
+    <div class="before-top clearfix w1280">
+        <a class="before-logo fl"><img src="../defaultroot/images/ver113/shougang/logo.png"></a>
+        <div class="before-nav fl">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">机构导航</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="#">公司链接</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="before-logo-ri fr clearfix">
+            <div class="header-buttom-fr fr">
+                <input type="text" id="search" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                <a onclick="SearchInformation();" class="before-btn"><i class="fa fa-search fa-color"></i></a>
+            </div>
+            <div class="ri_1 fr">
+                <a href="#">邮箱</a>
+            </div>
+        </div>
+    </div>
+    <!--- top  end -->
+    <!--- banner  -->
+    <div class="banner">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:270px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:270px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:270px;">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+    </div>
+    <!--- banner end -->
+    <div id="mainLayout" style="height:100%;" class="wh-container wh-portaler">
+        <!-- banner关闭按钮 -->
+        <div class="close_banner"><span></span></div>
+        <table class="w1280" id="portalMain" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout: fixed;">
+            <tbody>
+                <tr>
+                    <td width="29" class="portal-column-td" zone="A">
+                        <!--通知公告-->
+                        <div class="wh-portal-info-box height-1">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">通知公告</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 规章制度 -->
+                        <div class="wh-portal-info-box height-2">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">规章制度</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content wh-protal-overflow">
+                                        <div class="gzzd">
+                                            <ul class="clearfix">
+                                                <li><a href="#" target="_blank">现行制度目录</a></li>
+                                                <li><a href="#" target="_blank">废止制度目录</a></li>
+                                                <li><a href="#" target="_blank">生产安全</a></li>
+                                                <li><a href="#" target="_blank">设备管理</a></li>
+                                                <li><a href="#" target="_blank">技术质量</a></li>
+                                                <li><a href="#" target="_blank">能源环保</a></li>
+                                                <li><a href="#" target="_blank">劳务人事</a></li>
+                                                <li><a href="#" target="_blank">武装保卫</a></li>
+                                                <li><a href="#" target="_blank">财务管理</a></li>
+                                                <li><a href="#" target="_blank">行政生活</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--党员学习园地 -->
+                        <div class="wh-portal-info-box height-3">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide01 clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">党员学习园地</a></li>
+                                        <li class="wh-portal-title-li"><a href="">党务公开</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide01">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>ww老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>ss老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营F汇报会会议纪要（被李小琳退回）FFF！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TPM园地 -->
+                        <div class="wh-portal-info-box height-4">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">TPM园地</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="40%" class="portal-column-td" zone="B">
+                        <!-- 冷轧公司会议通知  -->
+                        <div class="wh-portal-info-box height-1">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide02 clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">冷轧公司会议通知</a></li>
+                                        <li class="wh-portal-title-li"><a href="">股份公司会议通知</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide02">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>www老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display:none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营F汇报会会议纪要（被李小琳退回）FFF！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 公文公告 -->
+                        <div class="wh-portal-info-box height-2">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide03 clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">公文公告</a></li>
+                                        <li class="wh-portal-title-li"><a href="">会议纪要</a></li>
+                                        <li class="wh-portal-title-li"><a href="">督办</a></li>
+                                        <li class="wh-portal-title-li"><a href="">值班表/通讯录</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide03">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>11[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[1设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[1设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[1设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <font>[设备部]</font>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 冷轧新闻 -->
+                        <div class="wh-portal-info-box height-5">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide04 clearfix">
+                                        <li class="wh-portal-title-li"><a href="">冷轧新闻</a></li>
+                                        <li class="wh-portal-title-li on"><a href="">股份新闻</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide04">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="wh-portal-info-content">
+                                                        <div class="slideBox_1">
+                                                            <div class="hd">
+                                                                <ul>
+                                                                    <li class="">1</li>
+                                                                    <li class="on">2</li>
+                                                                    <li class="">3</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li style="display: none;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>ww新闻标题新闻标题新闻标题</p>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li style="display: list-item;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>新闻标题新闻标题新闻标题1</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li style="display: none;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>新闻标题新闻标题新闻标题3</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                                                            <a class="prev" href="javascript:void(0)"></a>
+                                                            <a class="next" href="javascript:void(0)"></a>
+                                                        </div>
+                                                        <div class="newsbox">
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>ww老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item">
+                                                                <div class="wh-portal-item-overflow clearfix">
+                                                                    <a href="" class="">
+                                                                        <i class="fa fa-file-o"></i>
+                                                                        <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                        <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                             <div class="wh-portal-i-item">
+                                                                <div class="wh-portal-item-overflow clearfix">
+                                                                    <a href="" class="">
+                                                                        <i class="fa fa-file-o"></i>
+                                                                        <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                        <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display:none;">
+                                                    <div class="wh-portal-info-content">
+                                                        <div class="slideBox_1">
+                                                            <div class="hd">
+                                                                <ul>
+                                                                    <li class="">1</li>
+                                                                    <li class="on">2</li>
+                                                                    <li class="">3</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li style="display: none;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>新闻标题新闻标题新闻标题</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li style="display: list-item;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>新闻标题新闻标题新闻标题1</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li style="display: none;">
+                                                                        <a href="#">
+                                                                            <img src="../defaultroot/images/ver113/shougang/img1.png">
+                                                                            <p>新闻标题新闻标题新闻标题3</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                                                            <a class="prev" href="javascript:void(0)"></a>
+                                                            <a class="next" href="javascript:void(0)"></a>
+                                                        </div>
+                                                        <div class="newsbox">
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item">
+                                                                <div class="wh-portal-item-overflow clearfix">
+                                                                    <a href="" class="">
+                                                                        <i class="fa fa-file-o"></i>
+                                                                        <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                        <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="wh-portal-i-item clearfix">
+                                                                <a href="">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="31" class="portal-column-td" zone="C">
+                        <!-- 登录 -->
+                        <div class="wh-portal-info-box height-1">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li on"><a href="" style="font-weight: bold;">用户登录</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="login-box">
+                                        <div class="login-contact">
+                                            <p class="before-username clearfix">
+                                                <label class="fl"><img src="../defaultroot/images/ver113/shougang/icon06.png"></label>
+                                                <input type="text" name="" class="fr">
+                                            </p>
+                                            <p class="before-password clearfix">
+                                                <label class="fl"><img src="../defaultroot/images/ver113/shougang/icon07.png"></label>
+                                                <input type="password" name="" class="fr">
+                                            </p>
+                                            <p class="remember"><em class="rebp fl open"><span></span>记住密码</em>
+                                                <input type="button" name="" class="dl fr" value="登录">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="others clearfix">
+                                        <li><a href="#">扫描登陆</a></li>
+                                        <li><a href="#">控件安装</a></li>
+                                        <li><a href="#">设置帮助</a></li>
+                                    </ul>
+                                </div>
+                                <script type="text/javascript">
+                                $(function() {
+
+
+
+
+                                })
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 安全动态 -->
+                        <div class="wh-portal-info-box height-2">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide05 clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">安全动态</a></li>
+                                        <li class="wh-portal-title-li"><a href="">人力资源</a></li>
+                                        <li class="wh-portal-title-li"><a href="">行政后勤</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide05">
+                                            <ul class="clearfix">
+                                                <li style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>ww老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: list-item;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>ss老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营F汇报会会议纪要（被李小琳退回）FFF！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href="">
+                                                            <i class="fa fa-file-o"></i>
+                                                            <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                            <span class="wh-pending-time">[03-20 10:36]</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 质量异议及抱怨 -->
+                        <div class="wh-portal-info-box line-height-1 height-6" >
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE &gt;&gt;</i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">质量异议及抱怨</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <font>[连退异议报告]</font>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <font>[连退异议报告]</font>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <font>[连退异议报告]</font>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 事故通报  -->
+                        <div class="wh-portal-info-box line-height-1 height-6">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE &gt;&gt;</i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">事故通报</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 常用链接  -->
+                        <div class="wh-portal-info-box ">
+                            <div class="wh-portal-tools">
+                                <i class="fa fa-more-a">MORE >></i>
+                            </div>
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">常用链接</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="before-link">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><img src="../defaultroot/images/ver113/shougang/icon02.png"><em>邮件系统</em></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../defaultroot/images/ver113/shougang/icon03.png"><em>新仓储系统</em></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../defaultroot/images/ver113/shougang/icon04.png"><em>迁钢入口</em></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../defaultroot/images/ver113/shougang/icon05.png"><em>三级系统</em></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- footer  -->
+    <div class="before-footer clearfix">
+        <span>中国.首钢集团</span>Copyright © 200 3 shougang.com.cn, All Rights Reserved
+    </div>
+    <!-- footer end  -->
+    <script type="text/javascript">
+    $(function() {
+        //banner图切换
+        $(".slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true
+        });
+
+        //党员学习园地  党务公开
+        var $tab_li_1 = $('.wh-portal-title-slide01 li');
+        $tab_li_1.hover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $tab_li_1.index(this);
+            $('.wh-portal-slide01 > ul > li').eq(index).show().siblings().hide();
+        });
+
+
+        //冷轧公司会议通知  股份公司会议通知
+        var $tab_li_2 = $('.wh-portal-title-slide02 li');
+        $tab_li_2.hover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $tab_li_2.index(this);
+            $('.wh-portal-slide02 > ul > li').eq(index).show().siblings().hide();
+        });
+
+
+        //冷轧公司会议通知  股份公司会议通知
+        var $tab_li_3 = $('.wh-portal-title-slide03 li');
+        $tab_li_3.hover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $tab_li_3.index(this);
+            $('.wh-portal-slide03 > ul > li').eq(index).show().siblings().hide();
+        });
+
+
+        //冷轧公司会议通知  股份公司会议通知
+        var $tab_li_4 = $('.wh-portal-title-slide04 li');
+        $tab_li_4.hover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $tab_li_4.index(this);
+            $('.wh-portal-slide04 > ul > li').eq(index).show().siblings().hide();
+        });
+
+
+        //冷轧公司会议通知  股份公司会议通知
+        var $tab_li_5 = $('.wh-portal-title-slide05 li');
+        $tab_li_5.hover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $tab_li_5.index(this);
+            $('.wh-portal-slide05 > ul > li').eq(index).show().siblings().hide();
+        });
+
+
+
+
+        //点击隐藏banner
+        $(".close_banner").click(function() {
+            if ($(".banner").hasClass("close")) {
+                $(".banner").removeClass("close");
+            } else {
+                $(".banner").addClass("close");
+            }
+
+            if ($(this).hasClass("close")) {
+                $(this).removeClass("close");
+                alert(ee);
+            } else {
+                $(this).addClass("close");
+            }
+
+        });
+
+
+        //登录
+
+        $(".login-box  .remember .rebp").click(function() {
+            if ($(this).hasClass("open")) {
+                $(this).removeClass("open");
+            } else {
+                $(this).addClass("open");
+            }
+
+        });
+
+        $(".login-box").parent().siblings(".wh-portal-i-title").find(".wh-portal-title-li a").css({
+            "font-weight": "bold"
+        });
+
+
+
+
+
+
+    });
+    </script>
+</body>
+
+</html>

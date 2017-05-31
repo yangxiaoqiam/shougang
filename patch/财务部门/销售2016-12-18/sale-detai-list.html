@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-line-blue size-small">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.line.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.sale-before.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+</head>
+
+<body>
+    <div class="topbox">
+        <div class="top w1000 clearfix">
+            登录：
+            <form>
+                <div><i class="fa fa-user"></i>
+                    <input type="text" class="text" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                </div>
+                <div><i class="fa fa-lock"></i>
+                    <input type="password" class="text" value="请输入密码">
+                </div>
+                <input type="button" name="" class="button" value="确 定" class="button">
+            </form>
+            <a href="##" class="forget">忘记密码</a>
+            <a href="##" class="kongjian">控件安装</a>
+            <p class="data fr">2016年12月5日 &nbsp; 星期一</p>
+        </div>
+    </div>
+    <!--- top  -->
+    <div class="before-top clearfix">
+        <div class=" w1000">
+            <a class="before-logo fl"><img src="../defaultroot/images/ver113/shougang/sale-logo.png"></a>
+            <!-- <div class="before-nav fl">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">首页</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#">机构导航</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#">公司链接</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="before-logo-ri fr clearfix">
+                <div class="header-buttom-fr fr">
+                    <i class="fa fa-search fa-color"></i>
+                    <input type="text" id="search" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                    <a onclick="SearchInformation();" class="before-btn">搜索</a>
+                </div>
+                <div class="ri_1 fr">
+                    <a href="#" class="link">公司链接</a>
+                    <a href="#">收藏</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbox">
+        <div class="w1000 nav">
+            <img src="../defaultroot/images/ver113/shougang/nav-icon.png" class="nav-icon">
+            <img src="../defaultroot/images/ver113/shougang/nav-icon1.png" class="nav-icon1">
+            <ul class="clearfix">
+                <li class="home">
+                    <a href="#"><i class="fa fa-home fa-color"></i>首页</a>
+                </li>
+                <li class="on"> <a href="#">公司概括</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">党群活动&nbsp;</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">营销活动</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">产品信息</a> </li>
+                <li> <a href="#">三创活动</a> </li>
+                <li> <a href="#">企业文化</a> </li>
+                <li class="zhidu"> <a href="#">法规制度</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!--- top  end -->
+    <!--- banner  -->
+    <div class="banner w1000">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li style="background:url(images/ver113/shougang/sale-banner.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+     
+    </div>
+    <!--- banner end -->
+    <div " class="wh-container wh-portaler w1000 ">
+        <div class="erji clearfix ">
+                    <div class="siderbar fl ">
+                        <div class="title ">
+                            <span>首页</span>
+                        </div>
+                        <div class="side-nav ">
+                            <ul>
+                                <li class="gx "><a href="# ">公司概括</a></li>
+                                <li class="nav-li "><a href="# ">党群活动</a></li>
+                                <li class="nav-li ">
+                                  <a href="# ">营销动态</a>
+                                   <dl class="side-dropdown ">
+                                    <dd><a href="# ">营销管理</a></dd>
+                                    <dd><a href="# ">客户服务</a></dd>
+                                    <dd><a href="# ">产品知识</a></dd>
+                                </dl>
+                                </li>
+                                
+                               
+                                <li class="nav-li "><a href="# ">产品信息</a></li>
+                                <li class="nav-li "><a href="# ">三创活动</a></li>
+                                <li class="nav-li "><a href="# ">企业文化</a></li>
+                                <li class="nav-li "><a href="# ">法制法规</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="erji-fr-box fr ">
+                        <div class="erji-fr fr ">
+                            <div class="location ">
+                                <div class="now ">营销管理</div>
+                               <!--  <p><a href="# ">首页</a><i>&gt;&gt;</i><a href="# ">新闻中心</a><i>&gt;&gt;</i><a href="# ">最近更新</a></p> --></div>
+                           
+                               <div class="news-list ">
+                        <table border="0 " align="center " cellpadding="0 " cellspacing="0 " style="width:100%; ">
+                            <tbody>
+                                <!-- <tr>
+                                   
+                                    <th class="th1" width="70% " align="center ">标题</th>
+                                   
+                                    <th class="th4 " width="15% " align="center ">部门</th>
+                                    <th class="th5 " width="10% " align="center ">发布人</th>
+                                     <th class="th3" width="15% " align="center ">发布日期</th>
+                                </tr> -->
+                                <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                                 <tr>
+                                    <td class="td1 title" width="85% " align="center "><a href="# ">孔雀港项目1港项目1港项目1港项目10月工程建设图片 </a></td>
+                                    <td width="15% " align="right " class="color-2">2016-11-01</td>
+                                </tr>
+                               
+                               
+                            </tbody>
+                        </table>
+                        <div class="wh-pager">
+                            <!-- <div class="wh-pager-desc">
+                                第&nbsp;<em class="current">1</em>/23&nbsp;页&nbsp;&nbsp;&nbsp;共&nbsp;340&nbsp;条记录&nbsp;
+                            </div>
+                            <div class="wh-pager-size">
+                                <select name="pageSize" id="page_size" onchange="pageClick(1,this);" class="wh-page-select" defaultvalue="15">
+                                    <option value="15" selected="">15</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div> -->
+                            
+                            <div class="wh-pager-btn">
+                                <input id="go_start_pager">
+                                <input type="button" value="Go">
+                            </div>
+                            <div class="wh-pager-list">
+                                <a class="wh-pager-previous wh-pager-disabled" onclick="pageBtnClick(this,'previous');">前页</a>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="wh-pager-current">1</a>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="">2</a>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="">3</a>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="">4</a>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="">5</a>
+                                <span><b>...</b></span>
+                                <a href="javascript:void(0);" onclick="pageClick($(this).text(),this);" class="">23</a>
+                                <a class="wh-pager-next" onclick="pageBtnClick(this,'next');">后页</a>
+                            </div>
+                        </div>
+                    </div>
+
+                          
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+       
+
+    <!-- footer  -->
+    <div class="before-footer clearfix ">
+        Copyright © 2016 shougang.com.cn, All Rights Reserved
+    </div>
+    <!-- footer end  -->
+
+    <script>
+          $(function() {
+            //二级导航
+
+        $(".side-nav .nav-li ").hover(function() {
+            $(this).children(".side-dropdown ").slideToggle(300).siblings(".side-dropdown ").slideUp("slow ");
+            $(this).addClass("current ");
+            $(this).siblings().next(".side-dropdown ").slideUp("slow ").find(".side-dropdown-three ").slideUp("slow ");
+            $(this).siblings().removeClass("current ");
+        
+        });
+
+        $(".side-nav dl dd ").hover(function() {
+            $(this).addClass("current ").next(".side-dropdown-three ").slideToggle(300);
+            $(this).siblings("dd ").next(".side-dropdown-three ").slideUp("slow ");
+            $(this).siblings().removeClass("current ");
+             $(this).parent().siblings(".side-dropdown ").slideUp("slow ");
+
+
+        });
+         $(".side-dropdown-three li ").hover(function() {
+            $(this).addClass("current ").siblings().removeClass("current ");
+
+        jQuery(".slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true
+        });
+ 
+
+        });
+
+
+        if($(".side-nav>ul>li").children().hasClass("side-dropdown")){ $(this).parent().addClass("drop-color"); } });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-red size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <title>电话会议</title>
+  <link rel="stylesheet" href="../dist/css/template_system/template.reset.css" />
+  <link rel="stylesheet" href="../dist/css/template.bootstrap.css" />
+  <link rel="stylesheet" href="../dist/css/template_system/template.fa.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.media.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.before.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.after.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.media.css" /> 
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.size.css" />
+</head>
+<body>
+  
+<!-- 选择群组 -->
+<div id="select-group" class="select-group-set  layui-iframe-set"> 
+  <div class="form-group">
+    <select id="" class="form-control chzn-done" data-placeholder="" multiple="">
+      <option value="-1">销售组</option>
+      <option value="2">各地文书</option>
+      <option value="3">一级采购</option>
+      <option value="4">副总经理</option> 
+    </select>
+  </div>
+  <div class="detail-btn clearfix">
+    <a class="btn btn-wh-line" href="#" role="button">确定</a>
+    <a class="btn btn-wh-line" href="#" role="button">添加新分组</a>
+  </div>
+</div>
+ 
+
+  <script type="text/javascript" src="../scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.extend.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="../scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="../scripts/pagejs/view-frame.js?v=20160307"></script>
+<script type="text/javascript">
+  
+   $(document).ready(function(){ 
+    
+      $('.chzn-done').chosen({
+      "width": "100%",
+      "disable_search_threshold": 10,
+      "search_contains": true,
+      "max_selected_options": 1,
+      "allow_single_deselect": true
+    });
+
+   })
+</script>
+</body>
+</html>

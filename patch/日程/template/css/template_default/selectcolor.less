@@ -1,0 +1,231 @@
+.rc-selectcolor {
+    width: 110px;
+    position: relative;
+    &.open {
+        .p1 {
+            display: none;
+        }
+        p.p2 {
+            display: block;
+        }
+    }
+    .wrap {
+        border: 1px solid #ddd;
+        height: 35px;
+        line-height: 35px;
+    }
+    .dropbox,
+    .wrap {
+        box-sizing: border-box;
+        padding: 0 5px;
+        p {
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            margin: 0;
+            div {
+                display: inline-block
+            }
+            span {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                float: left;
+                margin-top: 5px;
+            }
+            em {
+                float: left;
+                height: 25px;
+                line-height: 25px;
+                margin-left: 5px;
+                font-weight: normal;
+            }
+            &.cd2500 span {
+                background: #cd2500;
+            }
+            &.dc4fad span {
+                background: #dc4fad;
+            }
+        }
+    }
+    .dropbox {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        display: none;
+        border: 1px solid #ddd;
+        .select-new {
+            font-size: 12px;
+            border-top: 1px solid #ddd;
+            padding: 5px 0;
+        }
+    }
+    .cd2500 span {
+        background: #cd2500;
+    }
+    .dc4fad span {
+        background: #dc4fad;
+    }
+}
+
+.rc-selectcolor .wrap .p2 {
+    display: none;
+}
+
+.rc-selectcolor .dropbox.open {
+    display: block;
+}
+
+.gf-tjlb {
+	  border:1px solid #ddd; 
+	  padding:0  15px 20px 15px;
+	  box-sizing:border-box;
+	  .pbox{
+	  	 max-height:175px;
+	  	 overflow: hidden;
+	  	 overflow-y:auto;
+	  	  
+	  	   margin:0 -15px;
+	  }
+	  p {
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            margin: 0;
+            position:relative;
+             padding:0 15px;
+
+            box-sizing:border-box;
+          
+            cursor: pointer;
+
+            div {
+                display: inline-block
+            }
+            span {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                float: left;
+                margin-top:5px;
+            }
+            em {
+                float: left;
+                height: 25px;
+                line-height: 25px;
+                margin-left: 5px;
+                font-weight: normal;
+                font-style: normal;
+            }
+            &.cd2500 span {
+                background: #cd2500;
+            }
+            &.dc4fad span {
+                background: #dc4fad;
+            }
+            img{
+            	 position:absolute;
+            	 top:6px;
+            	 display:none;
+            	 &.g-xiugai{
+            	 	right: 30px;
+            	 }
+            	  &.g-close{
+            	 	right: 10px;
+            	 }
+            }
+        }
+        p:hover{
+        	 background:#cceaff;
+        	 img{
+        	 	display:block;
+        	 }
+        }
+
+        .gf-tjlb0-a{
+        	color: #0073c6;
+        	height:30px;
+        	line-height:30px;
+        	font-size:14px;
+        	position:relative;
+        	text-indent: 20px;
+        	margin:10px 0;
+        	img{
+        		margin-right: 5px;
+        		position:absolute;
+        		left:0;
+        		top:9px;
+        	}
+
+        }
+        input{
+        	 height:30px;
+        	 line-height:30px;
+        	 font-size:12px;
+        }
+}
+
+
+
+.gf-newlb{
+	border:1px solid #ddd;
+	padding:5px 0 5px 10px;
+	p{
+		margin:0 0 5px 0;
+	}
+	.dot{
+		 width:15px;
+		 height:10px;
+		 margin-top:13px;
+		 img{
+		 	 height:7px;
+		 }
+	}
+	.color-a{
+		display:block;
+		float:left;
+		width:15px;
+		height:15px;
+		background:red;
+		margin:8px 5px 0 0px;
+	}
+	.gf-serch{
+		 height:25px;
+		 line-height:25px;
+		 border:1px solid #ddd;
+	}
+  .gf-newlb-btn{
+  	margin:10px;
+	input{
+		  height:30px;
+		  line-height:30px;
+	}
+
+}
+
+
+}
+
+ .dropdown-a{
+ 	width:150px;
+ 	border:1px solid #ddd;
+ 	padding:5px 5px 5px 10px;
+ 	display:none;
+ 	margin:10px 0 0 10px;
+
+	a{
+		 height:25px;
+		 line-height:25px;
+		 width:25px;
+		 display:block;
+		 float:left;
+		 margin:2px;
+
+	}
+}
+
+
+.select-a.open .dropdown-a{
+  display:block;
+}

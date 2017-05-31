@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-line-blue size-small">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.line.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.pro-before.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body class="MainFrameBox">
+    <!--- top  -->
+    <div class="before-top">
+        <div class="w1200 clearfix">
+            <a class="before-logo fl"><img src="template/images/pro/before-logo.png"></a>
+            <div class="before-logo-ri fr clearfix">
+                <div class="header-buttom-fr fr">
+                    <input type="text" id="search" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                    <a onclick="SearchInformation();" class="before-btn"><i class="fa fa-search fa-color"></i></a>
+                </div>
+                <div class="ri_1 fr">
+                    <a href="#" class="sc">收藏本站</a>
+                    <a href="#">设为首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- top  end -->
+    <!--- banner  -->
+    <div class="banner">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li style="background:url(template/images/pro/before-banner1.png) center no-repeat; height:330px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(template/images/pro/before-banner1.png) center no-repeat; height:330px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(template/images/pro/before-banner1.png) center no-repeat; height:330px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(template/images/pro/before-banner1.png) center no-repeat; height:330px;">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+        <script type="text/javascript">
+        jQuery(".slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true
+        });
+        </script>
+    </div>
+    <!--- banner end -->
+    <div id="mainLayout" style="height:100%;" class="wh-container wh-portaler w1200">
+        <table id="portalMain" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout: fixed;">
+            <tbody>
+                <tr>
+                    <td width="30%" class="portal-column-td" zone="A">
+                        <!--图片新闻 -->
+                        <div class="wh-portal-info-box wh-portal-nopadding wh-portal-noborder wh-portal-html ">
+                            <div class="wh-portal-info">
+                                <!--#include file="platform/portal/before-news-img.html"-->
+                            </div>
+                        </div>
+                        <!-- 首钢动态 -->
+                        <div class="wh-portal-info-box">
+                            <!--#include file="platform/portal/portal-i-tools.html"-->
+                            <div class="wh-portal-info">
+                                <!--#include file="platform/portal/before-news-dongtai.html"-->
+                            </div>
+                        </div>
+                    </td>
+                    <td width="40%" class="portal-column-td" zone="B">
+                        <!-- 新闻中心 -->
+                        <div class="wh-portal-info-box ">
+                            <!--#include file="platform/portal/portal-i-tools.html"-->
+                            <div class="wh-portal-info">
+                                <!--#include file="platform/portal/before-news-center.html"-->
+                            </div>
+                        </div>
+                        <!-- 通知公告 -->
+                        <div class="wh-portal-info-box ">
+                            <!--#include file="platform/portal/portal-i-tools.html"-->
+                            <div class="wh-portal-info">
+                                <!--#include file="platform/portal/before-news-gonggao.html"-->
+                            </div>
+                        </div>
+                    </td>
+                    <td width="30%" class="portal-column-td" zone="C">
+                        <!-- 登录 -->
+                        <!--  -->
+                        <div class="wh-portal-info-box wh-portal-nopadding wh-portal-noborder wh-portal-html ">
+                                <!--#include file="platform/portal/before-login.html"-->
+                        </div>
+                        <!-- 微信 -->
+                        <div class="wh-portal-info-box wh-portal-nopadding wh-portal-noborder wh-portal-html">
+                            <div class="wh-portal-info">
+                                <!--#include file="platform/portal/before-weixin.html"-->
+                            </div>
+                        </div </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- footer  -->
+    <div class="before-footer clearfix">
+        <div class="w1200 clearfix">
+            <div class="f-logo fl">
+                <a href="#"><img src="template/images/pro/before-f-logo.png"></a>
+            </div>
+            <div class="f-ri fr">
+                <!-- <div class="f-icons">
+                    <a href="#" class="f-icon01"></a>
+                    <a href="#" class="f-icon02"></a>
+                    <a href="#" class="f-icon03"></a>
+                </div> -->
+            <!--     <div class="f-part1">
+                <a href="#">流量统计</a>
+                <a href="#">网站地图</a>
+                <a href="#">法律声明</a>
+                <a href="#">友情链接</a>
+            </div> -->
+                <div class="coprright">Copyright 2016 © 深圳 &nbsp; All Rights Reserved by wanhu.</div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end  -->
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

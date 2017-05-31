@@ -1,0 +1,309 @@
+@ie8-fix:~"\9";
+
+//重置scffolding-wh.less
+* {
+  .box-sizing(content-box);
+}
+
+.modal,
+.layui-layer,
+.wh-view {
+  * {
+    .box-sizing(border-box);
+  }
+}
+
+textarea{
+  resize:none;
+  min-height: 10em;
+}
+
+// 解决window控件的层级问题
+.iframe-cover {
+  position: fixed;
+  border: none;
+  top: 0;
+  left:50%;
+  height: 100%;
+  width:900px;
+  margin-left: -450px;
+  z-index: -1;
+  .opacity(0);
+}
+
+
+//重置 bootstrap/modals.less
+.modal-header {
+  padding:10px;
+}
+.modal-dialog {
+	width: @modal-md;
+	margin: 30px auto;
+}
+.modal-content {
+	.box-shadow(0 5px 15px rgba(0,0,0,.5));
+}
+//详情页Modal
+.modal{
+  &.modal-details .close{
+    display: block;
+    width: 18px;
+    height: 18px;   
+    margin-top:2px; 
+    text-shadow:none;
+    font-weight: normal;
+    opacity: 1;
+    &:hover{
+      opacity: 1;
+    } 
+  } 
+} 
+
+//提醒项弹框宽度重置
+.modal-notice-set{
+  .modal-dialog {
+    width:490px;
+    margin: 30px auto;
+  }
+}
+
+//重置单选多选
+/*input[type="radio"],
+input[type="checkbox"]{
+  margin:0;
+  line-height: 1;
+  label{
+    min-height: 26px;
+  }
+}*/
+
+//重置alert
+.alert{
+  padding: 10px;
+  margin-bottom: 15px;
+  &.alert-dismissable,
+  &.alert-dismissible{
+    .close{
+      top:-3px;
+      right: -6px;
+    }
+  }
+}
+
+//增加文本显示
+//让某些特定元素不断行
+.text-nowrap{
+  white-space: nowrap;
+}
+
+//输入
+//任务弹框
+.layui-layer{  
+  .form-group{
+    margin-bottom: 0;
+  }
+}
+
+
+.form-control{
+  height: 34px;
+}
+.form-group {
+  em {
+    color:red;
+  }
+  .control-label{
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .form-control {
+    border-radius: 2px;
+  }
+  i.fa {
+    line-height: 34px;
+  }
+}
+.has-feedback{
+  label ~ .form-control-feedback{
+    top: 30px;
+  }
+}
+//重置 panels.less
+.panel {
+  margin-bottom:10px;
+  .panel-heading{
+    position: relative;
+    height: 44px;
+    padding: 6px 15px;
+    .panel-hd-btns,
+    .panel-hd-search{
+      float: right;
+      display: inline-block;
+      position: relative;
+      margin-left:5px;
+    }
+    .panel-hd-search{
+      width: 260px;
+    }
+    .panel-hd-tip{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px; 
+      .member-drop{
+        cursor: pointer;
+      }
+      .select-org{
+        cursor: pointer;
+      }
+ 
+      .hd-tip-dropdown{
+        position: absolute;
+        top: -400px; 
+        background: #fff;  
+        .box-shadow(1px 1px 3px #b2b2b2);
+        border: 1px solid #eee;  
+        padding: 0 3px;
+        li{
+          padding: 0 15px;
+          line-height: 25px; 
+        }
+      }
+
+      &.open{
+        .fa-angle-down{ 
+          &:before{
+            content: "\f006";
+          }
+        }
+        .hd-tip-dropdown{
+          top: 43px; 
+          left: 15px;
+        }
+      }
+
+    }
+  }
+  .table{
+    th{
+      border-top-width: 0;
+    }
+  }
+}
+ 
+//重置部分按钮边距
+.btn{
+  &.btn-nopadding{
+    padding:0;
+    border-width: 0;
+    &:active,
+    &:focus,
+    &:active:focus, 
+    &.active:focus, 
+    &.focus,
+    &.active,
+    &:active.focus,
+    &.active.focus{
+      outline: none;
+      outline-offset:0;
+      .box-shadow(none);
+    }
+    i.fa{
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
+  .caret{
+    margin-left: 3px;
+  }
+}
+.btn-group-sm{
+  > .btn{
+    height: 30px;
+    line-height: 1.333333;
+    line-height: 1.5 @ie8-fix;
+  }
+}
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon{
+  line-height: 1.333333;
+}
+.form-inline .input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+//定制固定栅格 
+.col-wh-(e('1'),@col-value:1);
+.col-wh-(e('2'),@col-value:2);
+.col-wh-(e('3'),@col-value:3);
+.col-wh-(e('4'),@col-value:4);
+.col-wh-(e('5'),@col-value:5);
+.col-wh-(e('6'),@col-value:6);
+.col-wh-(e('7'),@col-value:7);
+.col-wh-(e('8'),@col-value:8);
+.col-wh-(e('9'),@col-value:9);
+.col-wh-(e('10'),@col-value:10);
+.col-wh-(e('11'),@col-value:11);
+.col-wh-(e('12'),@col-value:12);
+
+.col-wh-(@col-name,@col-value){
+  .col-wh-@{col-name}{
+    .make-xs-column((@col-value));
+  }
+}
+
+//增加排序图标
+.sort {
+  cursor: pointer;
+  .carets {
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+    &-up,&-down{
+      display: inline-block;
+      width: 10px;
+      height: 5px;
+      position: absolute;
+      left: 0;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+    &-up{
+      top: 0;
+      border-top: 0;
+      border-bottom: 5px dashed;
+      border-bottom: 5px solid @ie8-fix;
+    }
+    &-down{   
+      bottom: 0;  
+      border-bottom: 0;
+      border-top: 5px dashed;
+
+      left:1px @ie8-fix;
+      bottom:0 @ie8-fix;  
+      width: 8px @ie8-fix;
+      height: 4px @ie8-fix;      
+      border-top:4px solid @ie8-fix;
+      border-right: 4px solid transparent @ie8-fix;
+      border-left: 4px solid transparent @ie8-fix;
+    }
+  }
+  &-asc{
+    .carets-up{
+      top:3px;
+    }
+    .carets-down{
+      bottom:-9999px;
+    }
+  }
+  &-desc{
+    .carets-up{
+      top:-9999px;
+    }
+    .carets-down{
+      bottom:3px;
+    }
+  }
+}    

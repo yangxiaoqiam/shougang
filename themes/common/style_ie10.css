@@ -1,0 +1,73 @@
+﻿/*select样式*/
+table.ui_border,table.ui_dialog{ width:auto;border-spacing:0;*border-collapse:collapse; }
+
+.MainFrameBox{overflow:visible;}
+
+/*textarea*/
+.textareaIco {
+    margin-top:0;
+    margin-left:5px;
+}
+
+/*custom form*/
+.openSelectIco {
+    margin-left:-27px;
+    margin-top:-3px;
+}
+
+
+select {
+    vertical-align: middle;
+    margin: 0;
+    font: 12px "宋体", Arial, Helvetica, sans-serif;
+	color:#666;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    padding: 0 1px 0 0px;
+    border: 1px solid #CCC;
+    /*width: 270px;*/
+    font-size: 12px;
+    /*background-color: #F9F9F9;*/
+    color: #333;
+}
+
+.webkit select {
+    padding: 0;
+    line-height: 24px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+.msie select {
+    line-height: 30px;
+}
+
+select:focus {
+    background-color: #F7FFFF;
+    border-color: #0f8fcf;
+}
+
+select option {
+    text-indent: 2px; /*option在FF等非IE浏览器缩进2px*/
+    font-size:12px;
+}
+/*-------------------------end----------------------------*/
+
+/*下拉列表*/
+.selectlist {
+    width: 98%;
+    margin: 0px 0px;
+    height: 29px;
+    line-height: 29px;
+    vertical-align: middle;
+    margin:3px 0px 3px 0px;
+}
+
+.selectlist option {
+    line-height: 22px;
+    height: 22px;
+    /*padding: 3px;*/
+    font-size:12px;
+    /*padding:1px 1px 1px 0;
+    padding:3px 1px 3px 0\9;*/
+}

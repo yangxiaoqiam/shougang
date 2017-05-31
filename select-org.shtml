@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-seablue size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="renderer" content="ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template.bootstrap.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.lists.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    
+</head>
+
+<body>
+    <div class="wh-wrapper">
+        <!--#include file="include/idx-global.html"-->
+        <div class="wh-content">
+            <span id="switch-l-nav" class="btn-switch-show"><i class="fa fa-caret-right"></i><i class="fa fa-caret-left"></i></span>
+            <div class="wh-l-content" switch-tip="true">
+                <div class="wh-left-menuList">
+                    <div class="wh-l-msg">
+                        <a href="" class="clearfix">
+                            <i class="fa fa-cog fa-color"></i>
+                            <span>信息管理 <i class="fa fa-meeting-mana fa-color"></i></span>
+                        </a>
+                    </div>
+                    <div class="wh-l-con">
+                        <ul id="treeDemo" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+            <!-- "../platform/portal/information.shtml" -->
+            <div class="wh-r-content wh-r-bootstrap wh-ios-iframe-bug">
+                <div class="wh-view view-lists">
+                    <div class="view-container">
+                        <!-- 组织树  -->
+                        <div class="wh-org-tree no-tree">
+                            <div class="org-tree">
+                                <div class="wh-l-msg">
+                                    <a href="javascript:void(0);" class="clearfix">
+                                        <i class="fa fa-angle-left org-tree-close"></i>
+                                        <span>组织树</span>
+                                    </a>
+                                </div>
+                                <div class="wh-l-con">
+                                    <ul id="treeDemo2" class="ztree-org"></ul>
+                                </div>
+                            </div>
+                            <div class="org-abc">
+                                <span>全部</span>
+                                <ul>
+                                    <li><a href="#">A</a></li>
+                                    <li><a href="#">B</a></li>
+                                    <li><a href="#">C</a></li>
+                                    <li><a href="#">D</a></li>
+                                    <li><a href="#">E</a></li>
+                                    <li><a href="#">F</a></li>
+                                    <li><a href="#">G</a></li>
+                                    <li><a href="#">H</a></li>
+                                    <li><a href="#">I</a></li>
+                                    <li><a href="#">J</a></li>
+                                    <li><a href="#">K</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">N</a></li>
+                                    <li><a href="#">O</a></li>
+                                    <li><a href="#">P</a></li>
+                                    <li><a href="#">Q</a></li>
+                                    <li><a href="#">R</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">T</a></li>
+                                    <li><a href="#">U</a></li>
+                                    <li><a href="#">V</a></li>
+                                    <li><a href="#">W</a></li>
+                                    <li><a href="#">X</a></li>
+                                    <li><a href="#">Y</a></li>
+                                    <li><a href="#">Z</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end -->
+                        <div class="view-hdpanel panel panel-whlist le-notree">
+                            <div class="panel-heading clearfix">
+                                <div class="txl_tab">
+                                    
+                                    <div class="bd">
+                                        <ul class="picList">
+                                            <li class="active"> <span>效果1</span></li> 
+                                            <li><span>效果2</span></li>
+                                            <li><span>效果3</span></li>
+                                            <li><span>效果4</span></li>
+                                            <li><span>效果5</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="hd">
+                                        <a class="next"><i class="fa fa-caret-right fa-color"></i></a>
+                                        <a class="prev"><i class="fa   fa-caret-left fa-color"></i></a>
+                                    </div>
+                                </div>
+                                 
+                                 <div class="panel-hd-tip">
+                                    <i class="fa fa-sitemap select-org"></i>
+                                    <span>人员</span>
+                                    <i class="fa fa-angle-down member-drop"></i>
+                                    <div class="hd-tip-dropdown">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">人员</a></li>
+                                            <li><a href="javascript:void(0)">组织</a></li>
+                                            <li><a href="javascript:void(0)">权限</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-hd-search has-feedback">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-btn senior-seachbtn"><a href="javascript:void(0)" class="btn btn-wh-line">高级搜索</a></div>
+                                        <label id="searchInpTip" onclick="hidesearchInpTip('queryPersonName')" class="searchInpTip_class" style="display: block;">&nbsp;请输入姓名</label>
+                                        <input type="text" class="form-control form-control-wh-line" id="" >
+                                        <div class="input-group-btn"><a href="javascript:void(0)" class="btn btn-wh-line"><i class="fa fa-search"></i></a></div>
+                                    </div>
+                                    <!-- 高级搜索下拉框 -->
+                                    <div class="list-senior-search clearfix">
+                                        <p class="search-title">
+                                            <span>搜索项</span>
+                                            <i class="fa fa-angle-right close-search"></i>
+                                        </p>
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-wh-3 control-label">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+                                                <div class="col-wh-9">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id=" " value=" "> 男
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id=" " value=" "> 女
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门</label>
+                                                <div class="col-wh-9">
+                                                    <input type="text" class="form-control" id=" " placeholder=" ">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</label>
+                                                <div class="col-wh-9">
+                                                    <input type="text" class="form-control" id=" " placeholder=" ">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">职&nbsp;位&nbsp;级&nbsp;别</label>
+                                                <div class="form-group col-wh-9 mbottom">
+                                                    <select class="form-control">
+                                                        <option>12</option>
+                                                        <option>22</option>
+                                                        <option>33</option>
+                                                    </select>
+                                                    <select class="form-control">
+                                                        <option>12</option>
+                                                        <option>22</option>
+                                                        <option>33</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</label>
+                                                <div class="col-wh-9">
+                                                    <input type="text" class="form-control" id=" " placeholder=" ">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话</label>
+                                                <div class="col-wh-9">
+                                                    <input type="text" class="form-control" id=" " placeholder=" ">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拉</label>
+                                                <div class="col-wh-9">
+                                                    <select class="form-control">
+                                                        <option>12</option>
+                                                        <option>22</option>
+                                                        <option>33</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期</label>
+                                                <div class="col-wh-9">
+                                                    <div class="has-feedback">
+                                                        <input id="data-bsday" type="text" class="form-control">
+                                                        <i class="fa fa-calendar form-control-feedback"></i>
+                                                    </div>
+                                                    <lable>至</lable>
+                                                    <div class="has-feedback">
+                                                        <input id="data-bsday1" type="text" class="form-control">
+                                                        <i class="fa fa-calendar form-control-feedback"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-wh-3 control-label">下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拉</label>
+                                                <div class="col-wh-9">
+                                                    <select class="form-control">
+                                                        <option>12</option>
+                                                        <option>22</option>
+                                                        <option>33</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-btn clearfix">
+                                            <a class="btn btn-wh-line" href="#" role="button">重置</a>
+                                            <a class="btn btn-wh" href="#" role="button">搜索</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-hd-btns">
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh">新增</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line">导出</a>
+                                        <a href="javascript:void(0)" class="btn btn-wh-line dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">导出PDF</a></li>
+                                            <li><a href="javascript:void(0)">导出Word</a></li>
+                                            <li><a href="javascript:void(0)">导出Excel</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">导出所有格式</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line meeting-handle">发起会议</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line move-attendance-a">移动考勤</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line management-handle">分类管理</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line add-group">加入群组</a>
+                                    </div>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="javascript:void(0)" class="btn btn-wh-line">更多</a>
+                                        <a href="javascript:void(0)" class="btn btn-wh-line dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">分类管理</a></li>
+                                            <li><a href="#">模板</a></li>
+                                            <li><a href="#">复制</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">批量复制</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--#include file="include/table-list-contact.html"-->
+                            <!-- pagenition -->
+                            <div class="panel-footer">
+                                <div id="page" class="m-pagination"></div>
+                                            <style type="text/css">
+                                   .gf-select-color{width: 150px;border: 1px solid #ddd;padding:5px;}
+                                   .gf-select-color ul{overflow: hidden;}
+                                   .gf-select-color li .fa{ display: none; color: #fff !important; font-weight: normal;font-size: 12px;margin:8px auto; }
+                                   .gf-select-color li{float: left; width:30px;height:30px;margin:2px; line-height: 30px;display: flex;text-align: center;}
+        
+                                    .gf-select-color li.active .fa{display:inline-block;}
+                                   .gf-select-color li.red {background: #cd2500;}
+                                   .gf-select-color li.pink {background: #dc4fad;}
+                                   .gf-select-color li.darkred {background: #ad193d;}
+                                   .gf-select-color li.orange {background: #F27521;}
+                                   .gf-select-color li.lightgreen {background: #82ba01;}
+                                   .gf-select-color li.green {background: #008b18;}
+                                   .gf-select-color li.cyan {background: #03b3b1;}
+                                   .gf-select-color li.seablue {background: #00829a;}
+                                   .gf-select-color li.skyblue {background: #5cb2ff;}
+                                   .gf-select-color li.blue {background: #0073c6;}
+                                    .gf-select-color li.violet {background: #4617b5;}
+                                   .gf-select-color li.purple {background: #8c0095;}
+                                   .gf-select-color li.indigo {background: #004b8c;}
+                                   .gf-select-color li.darkblue {background: #001941;}
+                                   .gf-select-color li.maroon {background: #580000;}
+                                   .gf-select-color li.brown {background: #380001;}
+                                   .gf-select-color li.gray {background: #585858;}
+                                   .gf-select-color li.black {background: #333;}
+
+                             }
+                             
+                             </style>
+                             <input type="hidden">
+                            <div class="gf-select-color clearfix" data-value="blue">
+                                      <ul class="clearfix">
+                                          <li class="red" data-themecolor="cd2500"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="pink" data-themecolor="dc4fad"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="darkred" data-themecolor="ad193d"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="orange" data-themecolor="F27521"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="lightgreen" data-themecolor="82ba01"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="green" data-themecolor="008b18"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="cyan" data-themecolor="03b3b1"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li  class="seablue" data-themecolor="00829a"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="skyblue" data-themecolor="5cb2ff"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="blue active" data-themecolor="0073c6"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="purple" data-themecolor="8c0095"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="indigo" data-themecolor="004b8c"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="darkblue" data-themecolor="001941"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="maroon" data-themecolor="580000"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="brown" data-themecolor="380001"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="gray" data-themecolor="585858"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="black" data-themecolor="333"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                          <li class="violet" data-themecolor="4617b5"><a></a><i class="fa fa-check-circle-o"></i> </li>
+                                           
+                                         
+                                           
+                                     </ul>
+                            </div>
+                            </div>
+                             </div>
+                 
+                        </div>
+                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="include/idx-modal.html"-->
+    <!--#include file="include/idx-popover.html"-->
+    <!--#include file="include/detail-modal.html"-->
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/static/template.js"></script>
+    <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+    <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+    <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+
+    <script>
+    $(function() {
+
+    $(".gf-select-color ul li").click(function(){
+      
+       
+                $(this).addClass("active").siblings().removeClass("active");
+         
+    })
+
+        $("#page").pagination({
+            pageSize: 10,
+            total: 1000,
+            showInfo: true,
+            showJump: true,
+            showPageSizes: true,
+            showFirstLastBtn: true,
+            firstBtnText: '首页',
+            lastBtnText: '尾页',
+            prevBtnText: '上一页',
+            nextBtnText: '下一页',
+            infoFormat: '{start}至{end}页，总数{total}页',
+            noInfoText: '0分页',
+            jumpBtnText: '前往'
+
+        });
+        //点击排序切换字体图标类
+        $(".sort").click(function() {
+            var $this = $(this);
+            if ($this.hasClass("sort-asc")) {
+                $this.removeClass("sort-asc").addClass("sort-desc");
+            } else {
+                $this.removeClass("sort-desc").addClass("sort-asc");
+            }
+        })
+
+        //点击发起会议 
+        $(".meeting-handle").on("click", function(argument) {
+            layer.open({
+                type: 1,
+                title: '视频会议',
+                shadeClose: false,
+                shade: 0.8,
+                area: ['620px', '290px'],
+                content: $('#meeting-start')
+            });
+        });
+
+          //移动考勤 
+        $(".move-attendance-a").on("click", function(argument) {
+           layer.open({
+                type: 1,
+                title: '移动签到详情',
+                shadeClose: false,
+                shade: 0.8,
+                area: ['350px', '320px'],
+                content: $('#move-attendance')
+            });
+   
+
+
+        });
+
+
+        //点击分类管理
+        $(".management-handle").on('click', function() {
+            layer.open({
+                type: 1,
+                title: '分类管理',
+                shadeClose: false,
+                shade: 0.8,
+                area: ['300px', 'auto'],
+                content: $('#management')
+            })
+        })
+
+        //点击加入群组
+        $(".add-group").on("click", function() {
+            layer.open({
+                type: 1,
+                title: '选择分组',
+                shadeClose: false,
+                shade: 0.8,
+                area: ['400px', 'auto'],
+                content: $('#select-group')
+            })
+        })
+
+        $('.chzn-done').chosen({
+            "width": "100%",
+            "disable_search_threshold": 10,
+            "search_contains": true,
+            "max_selected_options": 1,
+            "allow_single_deselect": true
+        });
+
+
+        //日期控件点击
+        $('[data-seltype="single"').selectpicker();
+        laydate({
+            elem: '#data-bsday',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            min: laydate.now(), //设定最小日期为当前日期
+            max: '2099-06-16 23:59:59', //最大日期
+            istime: true
+        });
+        //日期控件点击
+        $('[data-seltype="single"').selectpicker();
+        laydate({
+            elem: '#data-bsday1',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            min: laydate.now(), //设定最小日期为当前日期
+            max: '2099-06-16 23:59:59', //最大日期
+            istime: true
+        });
+
+        //高级搜索
+        $(".senior-seachbtn").on("click", function() {
+
+
+            if ($(".panel-hd-search").hasClass("open")) {
+                $(".panel-hd-search").removeClass("open");
+            } else {
+                $(".panel-hd-search").addClass("open");
+            }
+        });
+        // var num=0时，搜索框和搜索按钮隐藏，var num!=0搜索框和搜索按钮显示
+        // $(document).ready(function(){
+        //   var  num=1;
+        //   if (num==0) {
+        //      $(".panel-hd-search").addClass("ser-show");
+        //       $(".ser-show").css("width","75");
+        //       $(".input-group-btn_bs").addClass("input-group-btn-none");
+        //   }
+        //   else{
+        //     $(".panel-hd-search").removeClass("ser-show");
+        //     $(".ser-show").css("width","380");
+        //     $(".input-group-btn_bs").removeClass("input-group-btn-none");
+        //   }
+        // })
+
+        $(".close-search").on("click", function() {
+            $(".panel-hd-search").removeClass("open");
+        })
+
+        //点击出现组织树
+        // $(".select-org").on("click",function(){  
+        //       $(this).addClass("active");
+        //        if($(".panel-whlist").hasClass("org-open")){
+        //         $(".panel-whlist").removeClass("org-open");
+        //       }else{
+        //         $(".panel-whlist").addClass("org-open");
+        //       }
+        //       if($(".wh-org-tree").hasClass("open-tree")){
+        //          $(".wh-org-tree").removeClass("open-tree");
+        //       }else{
+        //         $(".wh-org-tree").addClass("open-tree");
+        //       }
+
+
+        // });
+
+        // $(".org-tree-close").on("click", function(){  
+        //   $(".select-org").removeClass("active");
+        //   $(".wh-org-tree").removeClass("open-tree");
+        //   $(".panel-whlist").removeClass("org-open"); 
+        // })
+
+        //点击出现组织树
+        $(".select-org").on("click", function() {
+
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(".wh-org-tree").removeClass("open-tree");
+                $(".panel-whlist").removeClass("org-open");
+            } else {
+                $(this).addClass("active");
+                $(".panel-whlist").addClass("org-open");
+                $(".wh-org-tree").addClass("open-tree");
+
+            }
+        });
+
+
+
+        //人员下拉菜单
+        $(".member-drop").on("click", function() {
+            if (!$(".panel-hd-tip").hasClass("open")) {
+                $(".panel-hd-tip").addClass("open");
+            } else {
+                $(".panel-hd-tip").removeClass("open");
+            }
+        })
+
+    })
+
+    // placeholder兼容性问题解决
+
+
+
+    $(function() {
+        if (!placeholderSupport()) { // 判断浏览器是否支持 placeholder
+            $('[placeholder]').focus(function() {
+                var input = $(this);
+                if (input.val() == input.attr('placeholder')) {
+                    input.val('');
+                    input.removeClass('placeholder');
+                }
+            }).blur(function() {
+                var input = $(this);
+                if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                    input.addClass('placeholder');
+                    input.val(input.attr('placeholder'));
+                }
+            }).blur();
+        };
+    })
+
+    function placeholderSupport() {
+        return 'placeholder' in document.createElement('input');
+    }
+
+
+//新增页签
+   $(".txl_tab").slide({
+                    titCell: ".hd ul",
+                    mainCell: ".bd ul",
+                    autoPage: true,
+                    effect: "left",
+                    autoPlay: true,
+                    vis: 4,
+                    trigger: "click",
+                    autoPlay:false,
+                });
+
+$(function() {
+
+  if($(".txl_tab .picList").children().length>4){
+     $(".txl_tab .hd").css({"display":"inline-block"})
+  }
+  });
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-line-blue size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.line.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.sale-before.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+</head>
+
+<body>
+    <div class="topbox">
+        <div class="top w1000 clearfix">
+            登录：
+            <form>
+                <div><i class="fa fa-user"></i>
+                    <input type="text" class="text" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                </div>
+                <div><i class="fa fa-lock"></i>
+                    <input type="password" class="text" value="请输入密码">
+                </div>
+                <input type="button" name="" class="button" value="确 定" class="button">
+            </form>
+            <a href="##" class="forget">忘记密码</a>
+            <a href="##" class="kongjian">控件安装</a>
+            <p class="data fr">2016年12月5日 &nbsp; 星期一</p>
+        </div>
+    </div>
+    <!--- top  -->
+    <div class="before-top clearfix">
+        <div class=" w1000">
+            <a class="before-logo fl"><img src="../defaultroot/images/ver113/shougang/sale-logo.png"></a>
+            <!-- <div class="before-nav fl">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">首页</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#">机构导航</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#">公司链接</a>
+                        <dl>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                            <dd><a href="#">机构导航</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="before-logo-ri fr clearfix">
+                <div class="header-buttom-fr fr">
+                    <i class="fa fa-search fa-color"></i>
+                    <input type="text" id="search" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                    <a onclick="SearchInformation();" class="before-btn">搜索</a>
+                </div>
+                <div class="ri_1 fr">
+                    <a href="#" class="link">公司链接</a>
+                    <a href="#">收藏</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbox">
+        <div class="w1000 nav">
+            <img src="../defaultroot/images/ver113/shougang/nav-icon.png" class="nav-icon">
+            <img src="../defaultroot/images/ver113/shougang/nav-icon1.png" class="nav-icon1">
+            <ul class="clearfix">
+                <li class="home">
+                    <a href="#"><i class="fa fa-home fa-color"></i>首页</a>
+                </li>
+                <li class="on"> <a href="#">公司概括</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">党群活动&nbsp;</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">营销活动</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">产品信息</a> </li>
+                <li> <a href="#">三创活动</a> </li>
+                <li> <a href="#">企业文化</a> </li>
+                <li class="zhidu"> <a href="#">法规制度</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!--- top  end -->
+    <!--- banner  -->
+    <div class="banner w1000">
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li style="background:url(images/ver113/shougang/sale-banner.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+        <script type="text/javascript">
+        jQuery(".slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true
+        });
+        </script>
+    </div>
+    <!--- banner end -->
+    <div class="wh-container wh-portaler w1000 ">
+        <div class="erji clearfix ">
+            <div class="erji-fr-box detail-contact-width fr ">
+                <div class="erji-fr fr ">
+                    <div class="location clearfix ">
+                     <p> 您当前的位置：<a href="# ">首页</a><i>&gt;</i><a href="# ">收索</a><i>&gt;</i><a href="# ">会议通知</a></p>
+                    </div>
+                      <div class="ztzl-list">
+                         <ul class="clearfix">
+                               <li><a href="#">
+                                      <img  src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                                 <li><a href="#">
+                                      <img src="images/ver113/shougang/img13.png">
+                                      <p>两学一做</p>
+                                </a></li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- footer  -->
+        <div class="before-footer clearfix ">
+            Copyright © 2016 shougang.com.cn, All Rights Reserved
+        </div>
+        <!-- footer end  -->
+        <script>
+        $(function() {
+            //二级导航
+
+            $(".side-nav .nav-li ").hover(function() {
+                $(this).children(".side-dropdown ").slideToggle(300).siblings(".side-dropdown ").slideUp("slow ");
+                $(this).addClass("current ");
+                $(this).siblings().next(".side-dropdown ").slideUp("slow ").find(".side-dropdown-three ").slideUp("slow ");
+                $(this).siblings().removeClass("current ");
+
+            });
+
+            $(".side-nav dl dd ").hover(function() {
+                $(this).addClass("current ").next(".side-dropdown-three ").slideToggle(300);
+                $(this).siblings("dd ").next(".side-dropdown-three ").slideUp("slow ");
+                $(this).siblings().removeClass("current ");
+                $(this).parent().siblings(".side-dropdown ").slideUp("slow ");
+
+
+            });
+            $(".side-dropdown-three li ").hover(function() {
+                $(this).addClass("current ").siblings().removeClass("current ");
+
+            });
+
+
+            if ($(".side-nav>ul>li").children().hasClass("side-dropdown")) {
+                $(this).parent().addClass("drop-color");
+            }
+        });
+        </script>
+</body>
+
+</html>

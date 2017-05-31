@@ -1,0 +1,727 @@
+<!DOCTYPE html class="">
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-line-blue theme-red size-small">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.line.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.sale-before.css" />
+    <link rel="stylesheet" href="template/css/template_default/sale-red.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+</head>
+
+<body>
+    <div class="topbox">
+        <div class="top w1000 clearfix">
+            登录：
+            <form>
+                <div><i class="fa fa-user"></i>
+                    <input type="text" class="text" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                </div>
+                <div><i class="fa fa-lock"></i>
+                    <input type="password" class="text" value="请输入密码">
+                </div>
+                <input type="button" name="" class="button" value="确 定" class="button">
+            </form>
+            <a href="##" class="forget">忘记密码</a>
+            <a href="##" class="kongjian">控件安装</a>
+            <a href="##" class="kongjian wechat">扫描二维码
+                <span>
+                     <img src="images/ver113/shougang/qr.png">
+                </span>
+            </a>
+            <p class="data fr">2016年12月5日 &nbsp; 星期一</p>
+        </div>
+    </div>
+    <!--- top  -->
+    <div class="before-top clearfix">
+        <div class="w1000">
+            <a class="before-logo fl"><img src="../defaultroot/images/ver113/shougang/sale-logo.png"></a>
+            <div class="before-logo-ri fr clearfix">
+                <div class="header-buttom-fr fr">
+                    <i class="fa fa-search fa-color"></i>
+                    <input type="text" id="search" name="" value="请输入文字" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}">
+                    <a onclick="SearchInformation();" class="before-btn">搜索</a>
+                </div>
+                <div class="ri_1 fr">
+                    <div class="link">
+                        <a href="#">公司链接</a>
+                        <div class="linkdrop">
+                            <a href="#">公司链接公司链接</a>
+                            <a href="#">公司链接公司链接</a>
+                            <a href="#">公司链接公司链接</a>
+                        </div>
+                    </div>
+                    <a href="#">收藏</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbox">
+        <div class="w1000 nav">
+     <!--        <img src="../defaultroot/images/ver113/shougang/nav-icon.png" class="nav-icon">
+     <img src="../defaultroot/images/ver113/shougang/nav-icon1.png" class="nav-icon1"> -->
+            <ul class="clearfix">
+                <li class="home">
+                    <a href="#"><i class="fa fa-home fa-color"></i>首页</a>
+                </li>
+                <li class="on"> <a href="#">公司概括</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">党群活动&nbsp;</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">营销活动</a>
+                    <dl>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                        <dd><a href="#">机构导航</a></dd>
+                    </dl>
+                </li>
+                <li> <a href="#">产品信息</a> </li>
+                <li> <a href="#">三创活动</a> </li>
+                <li> <a href="#">企业文化</a> </li>
+                <li class="zhidu"> <a href="#">法规制度</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!--- top  end -->
+    <!--- banner  -->
+    <div class="banner w1000">
+        <div class="slideBox" id="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li style="background:url(images/ver113/shougang/sale-banner.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                    <li style="background:url(images/ver113/shougang/banner1.png) center no-repeat; height:125px;">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+        <script type="text/javascript">
+        jQuery("#slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: true
+        });
+        </script>
+    </div>
+    <!--- banner end -->
+    <div id="mainLayout" style="height:100%;" class="wh-container wh-portaler w1000">
+        <!-- banner关闭按钮 -->
+        <table class="w1280" id="portalMain" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout: fixed;">
+            <tbody>
+                <tr class="td-1">
+                    <td width="29%" class="portal-column-td" zone="A">
+                        <!--会议通知-->
+                        <div class="wh-portal-info-box">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">会议通知</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content wh-portal-iclist4 wh-protal-overflow">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="42%" class="portal-column-td">
+                        <div class="wh-portal-info-box">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">图片新闻</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-pic-content clearfix">
+                                        <div id="picimg">
+                                            <div class="hd">
+                                                <ul>
+                                                    <li>1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                            <div class="bd">
+                                                <ul>
+                                                    <li>
+                                                        <div class="wh-portal-pic-box">
+                                                            <a href=""><img src="images/ver113/pic01.jpg" alt="" class="wh-portal-pic-box-img">
+                                                                <p>股份公司领导莅临广州分…</p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="wh-portal-pic-box">
+                                                             <a href=""><img src="images/ver113/pic01.jpg" alt="" class="wh-portal-pic-box-img">
+                                                                <p>股份公司领导莅临广州分…</p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                                            <a class="prev" href="javascript:void(0)"></a>
+                                            <a class="next" href="javascript:void(0)"></a>
+                                        </div>
+                                        <div class="wh-portal-info-content" style="padding-bottom:0;margin-top:-7px;">
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span> 万户网站-4月份新员工企业…</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                                <i class="fa fa-new"></i>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>4月11日流程优化再造实施…</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>海万户网站建设签单快报</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>4月11日（本周六）流程优化再…</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>海万户网站建设签单快报</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>海万户网站建设签单快报</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>海万户网站建设签单快报</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                            <div class="wh-portal-i-item clearfix">
+                                                <a href="">
+                                                    <span>海万户网站建设签单快报</span>
+                                                </a>
+                                                <em>（4-27阅36次）</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="29%" class="portal-column-td" zone="A">
+                        <!--公告栏-->
+                        <div class="wh-portal-info-box title-bluebg">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title  clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">公告栏</a><span>Bulletin board</span></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content wh-portal-iclist4 wh-protal-overflow">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="wh-portal-info-box title-bluebg">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title  clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">公告栏</a><span>Bulletin board</span></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content" style="padding: 0px 10px 10px 12px;">
+                                    <div class="wh-slide-consult-slide flexslider">
+                                        <ul class="wh-slide-consult-ul clearfix">
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic1.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic2.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic3.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic4.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic1.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic1.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="wh-slide-consult-box">
+                                                    <div class="wh-slide-look">
+                                                        <div class="wh-p-person-header">
+                                                            <img src="images/ver113/shougang/sale-pic1.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                $(function() {
+                                    //专家咨询
+                                    $(".wh-slide-consult-slide").flexslider({
+                                        selector: ".wh-slide-consult-ul > li",
+                                        animation: "slide",
+                                        animationLoop: false,
+                                        itemWidth: 241,
+                                        itemMargin: 0,
+                                        minItems: 2,
+                                        maxItems: 4,
+                                        directionNav: true
+                                            // pausePlay: true
+                                    });
+                                })
+                                </script>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="td-3">
+                    <td>
+                        <div class="wh-portal-info-box">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">会议通知</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="map">
+                                            <a href="#"><img src="images/ver113/shougang/sale-map.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <!--  营销活动 -->
+                    <td>
+                        <div class="wh-portal-info-box">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left wh-portal-title-slide02 clearfix">
+                                        <li class="wh-portal-title-li on"><a href="">营销活动</a></li>
+                                        <li class="wh-portal-title-li "><a href="">热点分析</a></li>
+                                        <li class="wh-portal-title-li"><a href="">生产建设</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content">
+                                        <div class="wh-portal-slide02">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>谁知道今天会不会下雨谁知道今天会不会下雨谁知道今天会不会下雨</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>谁知道今天会不会下雨谁知道今天会不会下雨谁知道今天会不会下雨</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>现在有什么热门的网上或生活中的赚钱或创业项目...</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>现在有什么热门的网上或生活中的赚钱或创业项目...</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wh-portal-hidden" style="display: none;">
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>22现在有什么热门的网上或生活中的赚钱或创业项目...</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                    <div class="wh-portal-i-item clearfix">
+                                                        <a href=""><i class="fa fa-file-o"></i>信用卡透支2000块钱 必须要一个月还清吗？</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wh-portal-info-box title-bluebg">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title  clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">党群信息</a><span>Bulletin board</span></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content wh-portal-iclist4 wh-protal-overflow">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wh-portal-info-box title-bluebg">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title  clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">服务信息</a><span>Bulletin board</span></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content">
+                                    <div class="wh-portal-info-content wh-portal-iclist4 wh-protal-overflow">
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item">
+                                            <div class="wh-portal-item-overflow clearfix">
+                                                <a href="" class="">
+                                                    <i class="fa fa-file-o"></i>
+                                                    <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                    <span class="wh-pending-time">[03-20 10:36]</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                        <div class="wh-portal-i-item clearfix">
+                                            <a href="">
+                                                <i class="fa fa-file-o"></i>
+                                                <span>老客户经营汇报会会议纪要（被李小琳退回）！</span>
+                                                <span class="wh-pending-time">[03-20 10:36]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="td-4">
+                    <td colspan="3">
+                        <div class="wh-portal-info-box title-bluebg">
+                            <div class="wh-portal-info">
+                                <div class="wh-portal-i-title clearfix">
+                                    <ul class="wh-portal-i-title-left clearfix">
+                                        <li class="wh-portal-title-li  on"><a href="">常用系统</a><span>sdfsdfsdfds</span></li>
+                                    </ul>
+                                </div>
+                                <div class="wh-portal-i-content" style="padding: 14px 0;">
+                                    <div class="wh-portal-info-content">
+                                        <div class="changyong-system">
+                                            <a href="#">首钢客户营销服务平台</a>
+                                            <a href="#">迁顺订单交货期管理</a>
+                                            <a href="#">首钢经营管理平台</a>
+                                            <a href="#">顺迁评审系统</a>
+                                            <a href="#">京唐评审系统</a>
+                                            <a href="#">首钢邮件</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- footer  -->
+    <div class="before-footer clearfix">
+        Copyright © 2016 shougang.com.cn, All Rights Reserved
+    </div>
+    <!-- footer end  -->
+    <script type="text/javascript">
+    //营销活动
+    var $tab_li = $('.wh-portal-title-slide02 li');
+    $tab_li.hover(function() {
+        $(this).addClass('on').siblings().removeClass('on');
+        var index = $tab_li.index(this);
+        $('.wh-portal-slide02 > ul > li').eq(index).show().siblings().hide();
+    });
+    </script>
+    <script type="text/javascript">
+    jQuery("#picimg").slide({
+        mainCell: ".bd ul",
+        autoPlay: true
+    });
+    </script>
+</body>
+
+</html>

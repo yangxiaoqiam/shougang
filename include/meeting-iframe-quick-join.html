@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-red size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <title>电话会议</title>
+  <link rel="stylesheet" href="../dist/css/template_system/template.reset.css" />
+  <link rel="stylesheet" href="../dist/css/template.bootstrap.css" />
+  <link rel="stylesheet" href="../dist/css/template_system/template.fa.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.media.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.before.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.after.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.media.css" /> 
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.size.css" />
+</head>
+<body>
+  
+   <!-- 快捷加入 -->
+  <div id="detail-quickadd" class="modal-quickadd-set layui-iframe-set">
+    <textarea class="form-control " rows="4" >
+      
+    </textarea>
+    <div class="quickadd-info">
+      <p>备注：连续输入电话号码，号码之间使用；（分号）分隔且不能换 行，电话号码之前要加区号，请使用半角输入字符。</p>
+      <P>样例：01012345678,13912345678,01088523213-1122</P>
+    </div>
+    
+    <div class="detail-btn">
+      <a class="btn btn-wh" href="#" role="button">确定</a>
+      <a class="btn btn-wh-line" href="#" role="button">重置</a>
+      <a class="btn btn-wh-line" href="#" role="button">取消</a>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="../scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.extend.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="../scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="../scripts/pagejs/view-frame.js?v=20160307"></script>
+<script type="text/javascript">
+  
+   $(document).ready(function(){ 
+    
+      //我的联系人，点击高级搜索弹出搜索框
+      $(".basic-sea-btn").click(function(){
+        if($(this).hasClass("open")){
+          $(this).removeClass("open");
+          $(".senior-search").removeClass("open");
+        }else{
+          $(this).addClass("open");
+          $(".senior-search").addClass("open");
+        } 
+      })
+   })
+</script>
+</body>
+</html>

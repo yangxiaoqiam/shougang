@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-blue theme-blue-pure size-big">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="defaultroot">
+    <title>信息详情页</title>
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template.bootstrap.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" />
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/static/template.js"></script>
+    <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+    <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+    <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+    <!--add  css  -->
+    <link rel="stylesheet" type="text/css" href="pro/css/onecard.css">
+</head>
+
+<body style="padding-bottom:500px;">
+    <div>
+    	   <a id="select-month">月份选择</a>
+        <a id="paiban1">排班表1</a>
+        <a id="paiban2">班次次数2</a>
+        <a id="zb-tab">班次次数2</a>
+        <a id="consumption">最近二十次消费</a>
+    </div>
+    <div class="select-month">
+    	  <strong >2017年4月</strong> 
+    	  <div class="tab-title clearfix">
+    	  	   <div class="tab-fl fl">
+    	  	   	    <i class="fa fa-angle-left fa-color"></i>
+    	  	   	    <span>2017年4月</span>
+    	  	   	    <i class="fa fa-angle-right fa-color"></i>
+    	  	   </div>
+    	  	   <div class="tab-fr fr clearfix">
+    	  	   	    <i class="fa fa-angle-left fa-color"></i>
+    	  	   	    <i class="fa fa-circle fa-color"></i>
+    	  	   	    <i class="fa fa-angle-right fa-color"></i>
+    	  	   </div>
+    	  </div>
+    	  <div class="monthbox">
+    	  	   <table cellpadding="0" cellspacing="0" border="0" width="90%" align="center" style="table-layout:fixed;">
+    	  	   	    <tr>
+	    	  	   	    	<td><a href="#">1</a></td>
+	    	  	   	    	<td><a href="#">2</a></td>
+	    	  	   	    	<td><a href="#">3</a></td>
+	    	  	   	    	<td><a href="#">4</a></td>
+    	  	   	    </tr>
+    	  	   	     <tr>
+	    	  	   	    	<td><a href="#">5</a></td>
+	    	  	   	    	<td><a href="#">6</a></td>
+	    	  	   	    	<td><a href="#">7</a></td>
+	    	  	   	    	<td><a href="#">8</a></td>
+    	  	   	    </tr>
+    	  	   	     <tr>
+	    	  	   	    	<td><a href="#">9</a></td>
+	    	  	   	    	<td><a href="#">10</a></td>
+	    	  	   	    	<td><a href="#">11</a></td>
+	    	  	   	    	<td><a href="#">12</a></td>
+    	  	   	    </tr>
+    	  	   </table>
+    	  </div>
+    </div>
+    <div class="car-tan car-a" id="has-car">
+        <div class="tab-title">
+            <a class="title-a"><i class="fa fa-angle-left"></i>前一天</a>
+            <a class="title-b"><i class="fa fa-angle-right"></i>后一天</a>
+        </div>
+        <div class="tab-box">
+            <div class="week"><span>星期四</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>初十</span></div>
+            <div class="part part-bluebg">
+                <strong>回京：</strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong class="red">B车</strong>
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong class="red">B车</strong>
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong class="red">B车</strong>
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong class="red">B车</strong>
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+            <div class="part">
+                <strong class="red">B车</strong>
+                <strong><span>迁安</span><span> 莲花桥</span><span>古城</span><span>厂东门</span> </strong>
+                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+            </div>
+        </div>
+    </div>
+      <div class="car-tan car-a" id="no-car">
+        <div class="tab-title">
+            <a class="title-a"><i class="fa fa-angle-left"></i>前一天</a>
+            <a class="title-b"><i class="fa fa-angle-right"></i>后一天</a>
+        </div>
+        <div class="tab-box">
+            <div class="week"><span>星期四</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>初十</span></div>
+            <div class="part part-bluebg">
+                <strong>回京：</strong>
+                <p>无回京班车</p>
+            </div>
+            <div class="part part-bluebg">
+                <strong>返迁：</strong>
+                <p>无返迁班车</p>
+            </div>
+
+            <a class="paiban-close layui-layer-close">关闭</a>
+
+        </div>
+    </div>
+ 
+     <!--  切换排班表 -->
+    <div class="zh-tabbox">
+		    <div class="tab-title">
+		    	 <a href="#" class="on">长期大夜<br>班甲</a>
+		    	 <a href="#">长期大夜<br>班乙</a>
+		    </div>
+		    <div class="tab-contact" style="display:block;">
+		    	   <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout:fixed;">
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   </table>
+		    </div>
+		    <div class="tab-contact" >
+		    	   <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout:fixed;">
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班11</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   	  <tr>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  	  <td><a href="#">料场甲班</a></td>
+		    	   	  </tr>
+		    	   </table>
+		    </div>
+    </div>
+
+    <!-- 最近消费 -->
+    <div class="last-consumption">
+    	   <ul>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥811</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8334</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8</a>
+    	   	  </li>
+    	   	  <li>
+    	   	     	<p><strong>2017/4/9 11:34:36</strong></p>
+    	   	  	  <p>东配楼2080</p>
+    	   	  	  <a>￥8</a>
+    	   	  </li>
+    	   </ul>
+    	   <a class="paiban-close layui-layer-close">关闭</a>
+    </div>
+    <!--  乘车 -->
+    <div class="by-car">
+    	  <h3>乘车</h3>
+    	  <div class="car-b colorbg">
+    	  	    <strong>回京：</strong>
+               <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+               <div class="apply">
+               	   点击申请乘车<i class="fa fa-angle-right"></i>
+               </div>
+    	  </div>
+    	  <div class="set">
+    	  	  没有未完成的临时乘车
+    	  	  <a class="btn btn-wh-line fr">完成</a>
+    	  </div>
+    	  <h2>长途通勤车</h2>
+    	    <ul class="car-line">
+    	    	<li>
+    	    		<div class="city">
+    	    		     <i class="fa"></i>  迁安 <img src="images/ver113/shougang/jiantou.png"> 北京
+    	    		</div>
+    	    		<div class="dropdown">
+		    	    	 <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+              </div>
+    	    	</li>
+    	    	
+    	    		<li>
+    	    		<div class="city">
+    	    		     <i class="fa"></i> 北京 <img src="images/ver113/shougang/jiantou.png"> 迁安
+    	    		</div>
+    	    		<div class="dropdown">
+		    	    	 <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+              </div>
+    	    	</li>
+    	    </ul>
+    	     <h2>迁安短途通勤车</h2>
+    	    <ul class="car-line">
+    	    	<li>
+    	    		<div class="city">
+    	    		     <i class="fa"></i>  厂区 <img src="images/ver113/shougang/jiantou.png"> 小区
+    	    		</div>
+    	    		<div class="dropdown">
+		    	    	 <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+              </div>
+    	    	</li>
+    	    	
+    	    		<li>
+    	    		<div class="city">
+    	    		     <i class="fa"></i> 小区 <img src="images/ver113/shougang/jiantou.png"> 厂区
+    	    		</div>
+    	    		<div class="dropdown">
+		    	    	 <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+		             <div class="part">
+		                <strong><span>2017-4-5</span><span>星期一</span><span>10:00</span></strong>
+		                <p>丁（二）炼铁、维检、质检、动、电、痒、物资、安全、能源、生产、销售等单位</p>
+		             </div>
+              </div>
+    	    	</li>
+    	    </ul>
+    </div>
+   
+   <!-- 考勤信息表 -->
+   <div class="kq-list">
+   	  <h3>考勤信息表</h3>
+   	  <div class="tab">  	  
+   	  <div>
+   	      <i class="fa fa-angle-left"></i>  <span>2017-04</span> <i class="fa fa-angle-right"></i><a class="btn btn-wh-line">本月</a>
+      </div>
+   	  </div>
+   	  <p class="month-title">2017年4月考勤<i class="fa fa-angle-right fr"></i></p>
+   	  <ul class="kg-detail">
+   	  	   <li class="clearfix">
+   	  	        <span>上班</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>应上班</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>剩余班次</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>漏刷卡</span>
+   	  	        <em class="fr red">3</em>
+   	  	   </li>
+   	  	    <li class="clearfix">
+   	  	    <span><i class="fa fa-angle-up"></i> 2017-04-01  17：00</span>
+   	  	        <em class="fr red">漏刷卡</em>
+   	  	   </li>
+   	  </ul>
+     <p class="month-title">2017年5月考勤<i class="fa fa-angle-right fr"></i></p>
+   	  <ul class="kg-detail">
+   	  	   <li class="clearfix">
+   	  	        <span>上班</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>应上班</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>剩余班次</span>
+   	  	        <em class="fr">3</em>
+   	  	   </li>
+   	  	   <li class="clearfix">
+   	  	        <span>漏刷卡</span>
+   	  	        <em class="fr red">3</em>
+   	  	   </li>
+   	  	    <li class="clearfix">
+   	  	    <span><i class="fa fa-angle-up"></i> 2017-04-01  17：00</span>
+   	  	        <em class="fr red">漏刷卡</em>
+   	  	   </li>
+   	  </ul>
+
+   </div>
+   
+</body>
+<script type="text/javascript">
+$(function(){
+
+
+//月份选择
+$("#select-month").on('click', function() {
+    layer.open({
+        type: 1,
+        title: '选择月份',
+        shadeClose: false,
+        shade: 0.8,
+        area: ['500px', '400px'],
+        content: $('.select-month'),
+    })
+    $(".select-month").parent().parent().addClass("titlebg has-title");
+})
+
+
+
+
+//排班表1
+$("#paiban1").on('click', function() {
+    layer.open({
+        type: 1,
+        title: '分类管理',
+        shadeClose: false,
+        shade: 0.8,
+        area: ['500px', '700px'],
+        content: $('#has-car'),
+    })
+    $(".car-tan").parent().parent().addClass("titlebg");
+})
+
+
+//排班表2
+$("#paiban2").on('click', function() {
+    layer.open({
+        type: 1,
+        title: '分类管理',
+        shadeClose: false,
+        shade: 0.8,
+        area: ['500px', '480px'],
+        content: $('#no-car'),
+    })
+    $(".car-tan").parent().parent().addClass("titlebg");
+})
+
+
+//切换排班表
+$("#zb-tab").on('click', function() {
+    layer.open({
+        type: 1,
+        title: '切换排班表',
+        shadeClose: false,
+        shade: 0.8,
+        area: ['500px', '550px'],
+        content: $('.zh-tabbox'),
+    })
+    $(".zh-tabbox").parent().parent().addClass("titlebg has-title");
+    var $zh_tabtitle = $('.zh-tabbox .tab-title a');
+    $zh_tabtitle.hover(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        var index =  $zh_tabtitle.index(this);
+        $('.zh-tabbox .tab-contact').eq(index).show().siblings(".tab-contact").hide();
+    });
+})
+
+
+//最近20次消费
+$("#consumption").on('click', function() {
+    layer.open({
+        type: 1,
+        title: '最近<span>20</span>消费',
+        shadeClose: false,
+        shade: 0.8,
+        area: ['500px', '650px'],
+        content: $('.last-consumption'),
+    })
+    $(".last-consumption").parent().parent().addClass("titlebg has-title");
+})
+
+
+//乘车表
+
+$(".car-line li").click(function(){
+  
+  if($(this).hasClass("open")){
+  	     $(this).removeClass("open");
+    }
+    else{
+    	 $(this).addClass("open").siblings().removeClass("open");
+    }
+
+     
+})
+
+
+
+//考勤信息表
+
+   $(".kq-list .month-title").click(function(){
+   	  $(this).next("ul").show();
+   	   $(this).siblings(".month-title").next("ul").hide();
+   })
+
+})
+</script>
+
+</html>

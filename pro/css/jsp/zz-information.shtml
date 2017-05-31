@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue size-big ">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+ 
+
+     <!-- add -->
+    <link rel="stylesheet" href="template/css/template_default/zz.css" />
+</head>
+
+<body>
+    <div class="wh-container wh-portaler">
+        <table id="portalMain" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="table-layout:fixed;">
+            <tr>
+                <td width="20%" class="portal-column-td" zone="A">
+                    <!-- 常用功能  -->
+                    <div class="wh-portal-info-box">
+                        <div class="wh-portal-info">
+                           <!--#include file="platform/portal/zz-file.html"-->
+                        </div>
+                    </div>
+                </td>
+               
+            </tr>
+            
+        </table>
+    </div>
+
+
+    <script type="text/javascript">
+       $(function() {
+              
+               //自适应屏幕
+               
+                   var _width = window.screen.width;//$(window).width();
+                    
+                   if(_width >1400){
+                       
+                       $(".pro-container").addClass("w1400");
+                   }else {
+                        $(".pro-container").removeClass("w1400");
+                       
+                  }
+
+       });
+
+    </script>
+</body>
+
+</html>
+
+

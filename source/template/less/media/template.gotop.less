@@ -1,0 +1,61 @@
+/* ========================================================================
+ * 万户补充类脚本: scroll-top.js
+ * 用返回顶部
+ * ========================================================================
+ * Author: Shion.Phan
+ * Site: http://www.joomla178.com
+ * Github: https://github.com/shionphan
+ * ======================================================================== */
+
+.side-go-top{
+  display: inline-block;
+  width: 52px;
+  position: fixed;
+  bottom:50px;
+  right: 50%;
+  margin-right: -545px;
+  
+  // @media(min-width:@screen-lg-min){
+  //   margin-right: -645px;
+  // }
+  a{
+    display: block;
+    width: 50px;
+    height:50px;
+    overflow: hidden;
+    border-radius: 100%;
+    border:1px solid transparent;
+    font-size: 12px;
+    margin-bottom: 8px;
+    box-shadow:0 3px 8px #ddd;
+    -moz-box-shadow:0 3px 8px #ddd;
+    -webkit-box-shadow:0 3px 8px #ddd;
+    &.btn-go-top{    
+      margin-left: -9999px;
+      -webkit-transition: opacity .3s 0s,visibility 0s 0s;
+      -moz-transition: opacity .3s 0s,visibility 0s 0s;
+      transition: opacity .3s 0s,visibility 0s 0s;
+    }
+    i.fa,
+    em{
+      display: block;
+      height: 25px;
+      text-align: center;
+    }
+    i.fa{      
+      line-height: 30px;
+    }
+    em{
+      line-height: 18px;
+    }
+  }
+  &.show-top .btn-go-top{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .side-go-top {
+     margin-right: -500px;
+  }
+}

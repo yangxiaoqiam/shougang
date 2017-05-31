@@ -1,0 +1,99 @@
+
+ 
+     
+
+  <div class="wh-personal-card-content pro-user-info">
+    <img src="images/ver113/shougang/rw1.gif" />
+    <div class="user-info">
+      <strong>
+        罗薇
+      </strong>
+      <span class="work">上班</span>
+      <i class="click-info fa fa-angle-down"></i>
+      <p class="department">网站信息部</p>
+      <p class="date">今天是2016年07月19日</p>
+      <p class="day">星期三 上午11:00</p>
+      <div class="wh-hd-user-detail wh-personal-card-state  wh-hd-box-shadow">
+          <div class="per-wh-hd-user-state" >
+                    <a href="javascript:void(0)" class="current"><span>上班超过很多字怎么办</span><i class="fa"></i></a>
+                    <a href="javascript:void(0)"><span>出差</span><i class="fa"></i></a>
+                    <a href="javascript:void(0)"><span>调休</span><i class="fa"></i></a>
+                    <a href="javascript:void(0)"><span>请假</span><i class="fa"></i></a>
+                    <a href="" class="state-self">自定义</a>
+                </div>
+      </div>
+    </div>
+
+
+  </div>
+
+ <div class="quick-link">
+       <li>
+           <a>
+               <i class="i1"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i2"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i3"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i4"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i5"></i>
+               人员发起
+           </a>
+       </li>
+
+        <li>
+           <a>
+               <i class="i6"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i7"></i>
+               人员发起
+           </a>
+       </li>
+        <li>
+           <a>
+               <i class="i8"></i>
+               人员发起
+           </a>
+       </li>
+ </div>
+
+  <script type="text/javascript" src="../../scripts/plugins/jquery/jquery.min.js"></script>
+  <script>
+  $(function(){
+      $(".click-info").on('click', function(){ 
+        if($(this).hasClass("up")){
+          $(this).removeClass("up");
+        }else{
+          $(this).addClass("up");
+        }
+        $(".wh-hd-user-detail").slideToggle();
+      })
+
+       $('.per-wh-hd-user-state a').click(function () {
+        $(this).addClass('current').siblings().removeClass('current');
+    });
+
+  });
+  </script>

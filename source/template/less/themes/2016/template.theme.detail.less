@@ -1,0 +1,201 @@
+@import "../../../less/global/template.global.less";
+@import "../../../less/template.bootstrap.theme.wh.less";
+@import "color/var-global.less";
+@import "color/var-default-before.less";
+@import "color/var-default-after.less";
+
+.theme-mixin(@colorName,
+	@global-color,
+	@global-color-l:lighten(@global-color, 40%),
+	@global-color-d:darken(@global-color, 15%)
+) {
+  .theme-@{colorName}{
+		//删除按钮
+		i.fa-minus-circle{
+			color: @important-color;
+		}
+		//顶部面包屑
+		.wh-dtl-bread{
+			a{
+				span{
+					color:lighten(@global-color-black, 30%);
+					&:before{
+						color:@global-color;
+					}
+				}
+			}
+		}
+		//顶部右侧下拉
+		.wh-dtl-nav{
+			.nav{
+				>li{
+					>a{
+						&:after{
+							color:@global-color;
+						}
+						.badge{
+							background-color: @global-color;
+							color: @global-color-white;
+						} 
+					}
+				}
+			}
+		}
+		
+		//文件Meta更多
+		.wh-dtl-meta{
+			.meta-more{
+				>a{
+					border-color: @global-color
+				}
+			} 
+		}
+		
+		.meta-tags{
+			a.meta-tag{
+				background-color:lighten(@global-color-black, 65%);
+				color:lighten(@global-color-black, 10%);
+				&:hover{
+					background-color: @global-color;
+					color: @global-color-white;
+				}
+			}			
+			a.meta-cogs{
+				.fa{
+					color: lighten(@global-color-black, 10%);  
+				}
+				background-color:lighten(@global-color-black, 65%); 
+				span{display: none;}  
+				em{display: block;}
+				&:hover{ 
+					span{display: block;}
+					em{display: none;}
+				}
+			}
+			a.meta-close{
+				background-color: @global-color;
+				color: @global-color-white; 
+				.fa{
+					color: @important-color;  
+				}
+			}
+		}
+		//信息评论弹出框
+		.modal-metatags-set{  
+			ul>li>a>i.fa{ 
+				color: @global-color; 
+			}  
+		}
+		 
+
+		//标签添加下拉样式
+		.add-meta-tips{
+			label{
+				color: lighten(@global-color-black, 10%);  
+			}
+			.form-btn{
+				.btn{
+					border-color: @global-color;
+				}
+			}
+		}
+		
+		//顶部右侧下拉附件
+		.version-con{
+			ol{
+				li{
+					a{
+						em{
+							border-color: @global-color; 
+							color: @global-color;
+						}
+						&:hover{ 
+							em{
+								background: @global-color; 
+								color: @global-color-white;
+							}
+						}
+					}
+					&.current{
+						a{
+							color: @global-color; 
+							em{
+								background: @global-color; 
+								color: @global-color-white;
+							}
+						}
+					}
+					i.arrowtip{
+						color: @global-color;
+					} 
+				}
+			}
+		}
+		//正文
+		.wh-dtl-con{
+			blockquote{
+				border-left:3px solid @global-color;
+				background-color:lighten(@global-color-black, 70%) 
+			}
+		}
+		.wh-dtl-nav{
+			>a{
+				border-color: @global-color
+			}
+		}
+		
+		//通讯录 
+		a.btn-default.btn-details{
+			border-color: @global-color; 
+			color: @global-color;
+			&:hover{
+				background: @global-color; 
+				color: @global-color-white;
+			}
+		}
+
+		//群组
+		.load-more{
+			em{
+				color: @global-color;
+			}
+		}
+
+		//电话会议
+		.con-call-portal{
+			.form-group{
+				s{
+					color: @global-color; 
+				}
+			} 
+		}  
+	  
+		//选人界面
+		.seleuser-container{
+			border-top: 1px solid @global-color;
+			.user-type{
+				span{
+					&.current{
+						background: @global-color;
+						color: #fff; 
+					}
+				}
+			} 
+		} 
+	.org-abc{
+		color: @global-color;
+		ul{
+			li{
+				a{
+					color: @global-color;
+				}
+			}
+		}
+	} 
+	}
+}
+
+
+//
+
+.ss22{list-style: none;}

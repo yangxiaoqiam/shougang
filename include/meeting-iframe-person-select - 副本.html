@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-red size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <link rel="stylesheet" href="../dist/css/template_system/template.reset.css" />
+  <link rel="stylesheet" href="../dist/css/template.bootstrap.css" />
+  <link rel="stylesheet" href="../dist/css/template_system/template.fa.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.media.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.before.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.after.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.detail.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/themes/2016/template.theme.media.css" />
+  <link rel="stylesheet" href="../dist/css/template_default/template.detail.size.css" />
+</head>
+
+<body>
+ 
+  <div class="layui-iframe-set">
+    <div id="detail-selectuser" class="modal-selectuser-set">
+      <div class="basic-search clearfix">
+        <div class="col-wh-10">
+          <div class="form-group col-wh-3">
+            <label class="col-wh-4" for=" ">中文名：</label>
+            <input type="text" class="form-control col-wh-8" id=" " placeholder=" " />
+          </div>
+          <div class="form-group col-wh-3">
+            <label class="col-wh-3" for=" ">账号：</label>
+            <input type="text" class="form-control col-wh-9" id=" " placeholder=" " />
+          </div>
+          <div class="form-group col-wh-3">
+            <label class="col-wh-3" for=" ">组织：</label>
+            <input type="text" class="form-control col-wh-9" id=" " placeholder=" " />
+          </div>
+          <div class="form-group col-wh-3">
+            <label class="col-wh-4" for=" ">组名称：</label>
+            <input type="text" class="form-control col-wh-8" id=" " placeholder=" " />
+          </div>
+        </div>
+        <div class="col-wh-2">
+          <div class="form-group">
+            <div class="basic-sea-btn">
+              <button type="button" class="btn btn-default">高级搜索</button>
+              <span class="caret"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="senior-search clearfix">
+        <div class="col-wh-10 senior-search-con">
+          <div class="form-group col-wh-3">
+            <label class="col-wh-4" for=" " class="col-wh-3">英文名：</label>
+            <input type="text" class="form-control col-wh-8" id=" " placeholder=" " />
+          </div>
+          <div class="form-group col-wh-3">
+            <label class="col-wh-3" for=" ">简码：</label>
+            <input type="text " class="form-control col-wh-9 " id=" " placeholder=" " />
+          </div>
+          <div class="form-group col-wh-3 ">
+            <label class="col-wh-5" for=" ">职务级别：</label>
+            <div class="dropdown col-wh-7">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                职务级别
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)">等于（=）</a></li>
+                <li><a href="javascript:void(0)">大于（>）</a></li>
+                <li><a href="javascript:void(0)">小于（<）</a></li>
+                <li><a href="javascript:void(0)">大于等于（>=)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-group col-wh-3 ">
+            <div class="dropdown col-wh-12">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                <span class="caret"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-wh-2 senior-search-btn">
+          <div class="form-inline ">
+            <div class="form-group btn-l ">
+              <button type="submit " class="btn btn-default ">查找</button>
+            </div>
+            <div class="form-group btn-r ">
+              <button type="submit " class="btn btn-default ">清除</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="seleuser-container clearfix ">
+        <div class="user-type">
+          <ul class="nav nav-tabs type-tips" role="tablist">
+            <li role="presentation" class="active"><a href="#organize" aria-controls="home" role="tab" data-toggle="tab">组织</a></li>
+            <li role="presentation"><a href="#group" aria-controls=" " role="tab" data-toggle="tab">群组</a></li>
+            <li role="presentation"><a href="#quick" aria-controls=" " role="tab" data-toggle="tab">快捷</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active selectlistcon" id="organize">
+              <div class="usertype-searchlist">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder=" ">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+              <div id="treeDemo" class="ztree-contact"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane selectlistcon" id="group">
+              <div class="usertype-searchlist">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder=" ">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+              <div id="treeDemo" class="ztree-contact"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane selectlistcon" id="quick">
+              <div class="usertype-searchlist">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder=" ">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+              <div id="treeDemo" class="ztree-contact"></div>
+            </div>
+          </div>
+        </div>
+        <div class="group-list">
+          <div class="list-title clearfix">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">组织列表
+              </label>
+            </div>
+          </div>
+          <div class="selectlistcon">
+            <ul>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件万户软件万户软件万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="user-list">
+          <div class="list-title clearfix">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">用户列表
+              </label>
+            </div>
+          </div>
+          <div class="selectlistcon">
+            <ul>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件<span>(18755445852)</span></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="selected-list">
+          <div class="list-title clearfix">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">用户列表
+              </label>
+            </div>
+            <i class="fa fa-minus-circle-o"></i>
+          </div>
+          <div class="selectlistcon">
+            <ul>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">万户软件</label>
+                </div><i class="fa fa-minus-circle-o"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="detail-btn clearfix">
+        <a class="btn btn-wh-line" href="#" role="button">确定</a>
+        <a class="btn btn-wh-line" href="#" role="button">重置</a>
+        <a class="btn btn-wh-line" href="#" role="button">清除</a>
+      </div>
+    </div> 
+  </div>
+   
+  <script type="text/javascript" src="../scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.extend.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="../scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="../scripts/pagejs/view-frame.js?v=20160307"></script>
+
+  <script type="text/javascript"> 
+    $(document).ready(function(){
+      //我的联系人，点击高级搜索弹出搜索框
+      $(".basic-sea-btn").click(function(){
+        if($(this).hasClass("open")){
+          $(this).removeClass("open");
+          $(".senior-search").removeClass("open");
+        }else{
+          $(this).addClass("open");
+          $(".senior-search").addClass("open");
+        } 
+      })
+
+      //加载左侧ztree
+
+       var zNodes = [
+       {name:"万户网络", open:true, iconSkin: "fa fa" ,children:[
+          {name:"万户网络1", }, {name:"万户网络2"},{name:"万户网络3"},{name:"万户网络4"},{name:"万户网络5"},{name:"万户网络6"}]},
+       {name:"万户网络", open:true, iconSkin: "fa fa" ,children:[
+          {name:"万户网络1"}, {name:"万户网络2"}, {name:"万户网络3"}, {name:"万户网络4"}, {name:"万户网络5"}, {name:"万户网络6"}]}
+       ];
+
+        var setting = {
+            view: {
+                selectedMulti: false,
+                fontCss: setFontCss,            
+                dblClickExpand: false
+            },
+            check: {
+                enable: false
+            },
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            edit: {
+                enable: false
+            },
+            callback: {
+                onClick: onClick
+            }
+        };
+
+         //ztree 
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+    })
+  </script>
+</body>
+
+</html>

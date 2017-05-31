@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+/* html {overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);} */
+/* html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); } */
+html {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#grayscale);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(1);
+}
+=======
+html {overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);}
+>>>>>>> 7d6d3728f8b44391ea3b4a837688bf5b1443791c
